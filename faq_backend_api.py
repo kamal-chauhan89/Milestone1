@@ -10,12 +10,45 @@ from typing import Dict, Optional, Tuple
 
 
 import os
+import json
+from pathlib import Path
 
 app = Flask(__name__)
 CORS(app)
 
 # Initialize database
-db = FundDatabase()
+# Check if database exists and has data, populate if needed
+def initialize_database():
+    """Initialize database, populate if empty"""
+    db_file = Path("mutual_funds_db.json")
+    
+    # Check if database file exists and has data
+    if db_file.exists():
+        try:
+            with open(db_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                if len(data) > 0:
+                    print(f"✅ Database already exists with {len(data)} funds")
+                    return FundDatabase()
+        except Exception as e:
+            print(f"⚠ Warning: Error reading existing database: {e}")
+    
+    # Database doesn't exist or is empty, create it
+    print("📝 Database not found or empty, creating new one...")
+    
+    # Import and run populate script
+    try:
+        from populate_database import populate_database
+        populate_database()
+        print("✅ Database populated successfully")
+        return FundDatabase()
+    except Exception as e:
+        print(f"❌ Error populating database: {e}")
+        # Return empty database as fallback
+        return FundDatabase()
+
+# Initialize database
+db = initialize_database()
 
 
 class QueryProcessor:
