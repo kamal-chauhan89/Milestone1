@@ -91,5 +91,7 @@ if __name__ == '__main__':
     print('    -d \'{"query": "Expense ratio of ICICI Prudential Banking & PSU Debt Fund"}\'')
     print("\n" + "=" * 60)
     
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    # Use PORT from environment variable for cloud deployment, default to 5000 for local
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
 
