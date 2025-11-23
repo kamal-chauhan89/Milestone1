@@ -53,6 +53,7 @@ class FAQAssistant:
     def __init__(self, data_dir: str = "data"):
         self.store = MutualFundDataStore(data_dir)
         self.schemes = self.store.load_schemes()
+        self.conversation_context = {}  # Store conversation context per session
         
         # Initialize Gemini
         api_key = os.getenv('GOOGLE_GEMINI_API_KEY') or os.environ.get('GOOGLE_GEMINI_API_KEY')
@@ -171,6 +172,7 @@ Return only the scheme name if found, or "NONE" if not found. Do not include any
 - nav
 - fund_manager
 - fund_size
+- portfolio (for questions about holdings, debt ratio, cash ratio, equity allocation, asset allocation)
 - opinionated (if asking for advice/recommendation)
 - general (if none of the above)
 
@@ -195,7 +197,7 @@ Return only the category name, nothing else."""
             valid_types = [
                 'expense_ratio', 'exit_load', 'minimum_sip', 'lock_in',
                 'riskometer', 'benchmark', 'statements', 'nav',
-                'fund_manager', 'fund_size', 'opinionated', 'general'
+                'fund_manager', 'fund_size', 'portfolio', 'opinionated', 'general'
             ]
             
             if question_type in valid_types:
@@ -228,7 +230,7 @@ Return only the category name, nothing else."""
             return 'minimum_sip'
         if 'lock' in query_lower or 'elss' in query_lower:
             return 'lock_in'
-        if 'riskometer' in query_lower or 'risk rating' in query_lower:
+        if 'riskometer' in query_lower or 'risk rating' in query_lower or 'risk level' in query_lower:
             return 'riskometer'
         if 'benchmark' in query_lower:
             return 'benchmark'
@@ -236,10 +238,12 @@ Return only the category name, nothing else."""
             return 'statements'
         if 'nav' in query_lower:
             return 'nav'
-        if 'fund manager' in query_lower:
+        if 'fund manager' in query_lower or 'manager' in query_lower:
             return 'fund_manager'
         if 'fund size' in query_lower or 'aum' in query_lower:
             return 'fund_size'
+        if any(word in query_lower for word in ['portfolio', 'holding', 'debt ratio', 'cash ratio', 'equity allocation', 'asset allocation', 'composition']):
+            return 'portfolio'
         
         return 'general'
     
@@ -248,40 +252,53 @@ Return only the category name, nothing else."""
         facts_str = json.dumps(facts, indent=2)
         scheme_name = scheme.get('scheme_name', 'this scheme')
         
-        prompt = f"""You are a factual assistant for mutual fund information. Answer the user's query using ONLY the provided facts. Do not provide investment advice.
+        # Build comprehensive fact summary
+        fact_summary = []
+        for key, value in facts.items():
+            if value and value != 'N/A':
+                fact_summary.append(f"{key.replace('_', ' ').title()}: {value}")
+        
+        facts_text = "\n".join(fact_summary) if fact_summary else "Limited information available"
+        
+        prompt = f"""You are a knowledgeable mutual fund expert. Provide detailed, accurate information based on the facts below.
 
-Query: "{query}"
-Scheme Name: {scheme_name}
-Question Type: {question_type}
+Fund: {scheme_name}
+User Question: "{query}"
 
-Facts Available:
-{facts_str}
+Available Facts:
+{facts_text}
 
 Instructions:
-1. Answer the query using ONLY the facts provided above
-2. Be concise and factual
-3. If a fact is missing, say it's not available
-4. Do NOT provide investment advice or recommendations
-5. Do NOT make up information
+1. Provide a comprehensive answer with specific details from the facts
+2. If asked about expense ratio, state the exact value and explain its impact
+3. If asked about risk/riskometer, state the level and explain what it means for investors
+4. If asked about minimum investment, provide all amounts (SIP, lumpsum, first investment)
+5. If asked about exit load, state the exact terms and explain when it applies
+6. Include relevant additional information from the facts (NAV, fund size, benchmark, etc.)
+7. Be specific with numbers and percentages
+8. Use a professional but conversational tone
+9. Do NOT provide investment advice or recommendations
+10. If specific information is missing, clearly state what IS available
 
-Answer:"""
+Provide a detailed, informative answer (3-5 sentences):"""
 
         try:
             if self.use_new_api:
-                response = self.model.generate_content(prompt)
+                generation_config = genai.types.GenerationConfig(
+                    temperature=0.2,  # Lower temperature for more accurate, factual responses
+                    top_p=0.8,
+                    top_k=40,
+                )
+                response = self.model.generate_content(prompt, generation_config=generation_config)
                 answer = response.text.strip()
             else:
                 # Old API
                 response = genai.generate_text(
                     model='models/text-bison-001',
                     prompt=prompt,
-                    temperature=0.1
+                    temperature=0.2  # Lower temperature for better accuracy
                 )
                 answer = (response.result if hasattr(response, 'result') else str(response)).strip()
-            
-            # Ensure answer mentions scheme name if available
-            if scheme_name and scheme_name not in answer:
-                answer = f"For {scheme_name}, {answer}"
             
             return answer
         except Exception as e:
@@ -297,23 +314,24 @@ Answer:"""
         if question_type == 'expense_ratio':
             expense_ratio = facts.get('expense_ratio')
             if expense_ratio:
-                answer = f"The expense ratio of {scheme_name} is {expense_ratio}."
+                answer = f"The expense ratio of {scheme_name} is {expense_ratio}. This is the annual fee charged by the fund house for managing your investment, expressed as a percentage of your assets. A lower expense ratio means more of your returns stay with you."
             else:
-                answer = f"Expense ratio information for {scheme_name} is not available in our records."
+                answer = f"Expense ratio information for {scheme_name} is not available in our records. You can find this information in the scheme's fact sheet or on the Groww app."
             return answer, source_url
         
         elif question_type == 'exit_load':
             exit_load = facts.get('exit_load')
             if exit_load:
-                answer = f"The exit load for {scheme_name} is: {exit_load}."
+                answer = f"The exit load for {scheme_name} is: {exit_load}. Exit load is a fee charged when you redeem your investment before a specified period. To avoid this charge, hold your investment for the required duration mentioned."
             else:
-                answer = f"Exit load information for {scheme_name} is not available. Please check the scheme document."
+                answer = f"Exit load information for {scheme_name} is not available. Please check the scheme document or Groww app for current exit load terms."
             return answer, source_url
         
         elif question_type == 'minimum_sip':
             min_sip = facts.get('minimum_sip')
             first_inv = facts.get('first_investment')
             subsequent_inv = facts.get('subsequent_investment')
+            min_lumpsum = facts.get('minimum_lumpsum')
             
             parts = []
             if min_sip:
@@ -322,15 +340,13 @@ Answer:"""
                 parts.append(f"First investment: ₹{first_inv}")
             if subsequent_inv:
                 parts.append(f"Subsequent investments: ₹{subsequent_inv}")
+            if min_lumpsum:
+                parts.append(f"Minimum lumpsum: ₹{min_lumpsum}")
             
             if parts:
-                answer = f"For {scheme_name}, {', '.join(parts)}."
+                answer = f"For {scheme_name}, {', '.join(parts)}. You can start investing through SIP (Systematic Investment Plan) or lumpsum as per your preference."
             else:
-                min_lumpsum = facts.get('minimum_lumpsum')
-                if min_lumpsum:
-                    answer = f"Minimum lumpsum investment for {scheme_name} is ₹{min_lumpsum}. SIP information is not available."
-                else:
-                    answer = f"Minimum SIP information for {scheme_name} is not available in our records."
+                answer = f"Minimum investment information for {scheme_name} is not available in our records. Typically, most mutual funds allow SIP starting from ₹100-500."
             return answer, source_url
         
         elif question_type == 'lock_in':
@@ -349,9 +365,18 @@ Answer:"""
         elif question_type == 'riskometer':
             riskometer = facts.get('riskometer')
             if riskometer:
-                answer = f"The riskometer rating for {scheme_name} is: {riskometer}."
+                risk_explanation = ""
+                risk_lower = riskometer.lower()
+                if 'low' in risk_lower and 'moderate' not in risk_lower:
+                    risk_explanation = " This indicates relatively stable returns with lower volatility, suitable for conservative investors."
+                elif 'moderate' in risk_lower:
+                    risk_explanation = " This indicates balanced risk-return profile, suitable for investors with medium risk appetite."
+                elif 'high' in risk_lower or 'very high' in risk_lower:
+                    risk_explanation = " This indicates higher volatility and potential for higher returns, suitable for aggressive investors with long-term horizon."
+                
+                answer = f"The riskometer rating for {scheme_name} is: {riskometer}.{risk_explanation}"
             else:
-                answer = f"Riskometer information for {scheme_name} is not available in our records."
+                answer = f"Riskometer information for {scheme_name} is not available in our records. Check the scheme's fact sheet for risk rating."
             return answer, source_url
         
         elif question_type == 'benchmark':
@@ -401,7 +426,46 @@ Answer:"""
                 answer = f"Fund size information for {scheme_name} is not available in our records."
             return answer, source_url
         
-        return f"Information about {scheme_name} is available.", source_url
+        elif question_type == 'portfolio':
+            # Portfolio composition, debt ratio, cash ratio, etc.
+            portfolio_info = []
+            if facts.get('debt_percentage'):
+                portfolio_info.append(f"Debt: {facts['debt_percentage']}%")
+            if facts.get('equity_percentage'):
+                portfolio_info.append(f"Equity: {facts['equity_percentage']}%")
+            if facts.get('cash_percentage'):
+                portfolio_info.append(f"Cash: {facts['cash_percentage']}%")
+            if facts.get('top_holdings'):
+                portfolio_info.append(f"Top Holdings: {facts['top_holdings']}")
+            
+            if portfolio_info:
+                answer = f"Portfolio composition of {scheme_name}: {', '.join(portfolio_info)}."
+            else:
+                answer = f"Portfolio composition details for {scheme_name} are not available in our records. Please check the fund's fact sheet on Groww for detailed holdings information."
+            return answer, source_url
+        
+        else:
+            # General query about the fund - provide comprehensive information
+            available_info = []
+            if facts.get('expense_ratio'):
+                available_info.append(f"Expense Ratio: {facts['expense_ratio']}")
+            if facts.get('exit_load'):
+                available_info.append(f"Exit Load: {facts['exit_load']}")
+            if facts.get('minimum_sip'):
+                available_info.append(f"Minimum SIP: ₹{facts['minimum_sip']}")
+            if facts.get('riskometer'):
+                available_info.append(f"Risk Level: {facts['riskometer']}")
+            if facts.get('nav'):
+                available_info.append(f"Current NAV: ₹{facts['nav']}")
+            if facts.get('fund_size'):
+                available_info.append(f"Fund Size: {facts['fund_size']}")
+            
+            if available_info:
+                answer = f"Here's information about {scheme_name}:\n" + "\n".join(available_info[:5])
+            else:
+                answer = f"I found {scheme_name} in our database, but detailed information is currently not available. Please check the fund's fact sheet on Groww for complete details."
+            
+            return answer, source_url
     
     def handle_opinionated_question(self) -> Tuple[str, str]:
         """Handle opinionated questions with polite refusal"""
@@ -413,9 +477,48 @@ Answer:"""
         )
         return answer, self.educational_links['general']
     
-    def answer_query(self, query: str, use_gemini: bool = True) -> Dict:
-        """Answer a user query"""
+    def handle_general_question(self, query: str) -> Dict:
+        """Handle general mutual fund questions using Gemini"""
+        prompt = f"""You are a helpful mutual fund information assistant. Answer this general question about mutual funds with factual, educational information.
+
+Question: "{query}"
+
+Provide a helpful, informative answer (2-4 sentences) that explains the concept clearly. Do not provide investment advice or recommendations. Focus on educational information only."""
+        
+        try:
+            if self.use_new_api:
+                response = self.model.generate_content(prompt)
+                answer = response.text.strip()
+            else:
+                response = genai.generate_text(
+                    model='models/text-bison-001',
+                    prompt=prompt,
+                    temperature=0.3
+                )
+                answer = (response.result if hasattr(response, 'result') else str(response)).strip()
+            
+            return {
+                'answer': answer,
+                'source_url': self.educational_links['general'],
+                'question_type': 'general',
+                'scheme_name': None,
+            }
+        except Exception as e:
+            print(f"Error generating general answer: {e}")
+            return {
+                'answer': "I can help you with specific questions about mutual funds. Try asking about expense ratios, exit loads, minimum SIP amounts, lock-in periods, or other fund details.",
+                'source_url': self.educational_links['general'],
+                'question_type': 'general',
+                'scheme_name': None,
+            }
+    
+    def answer_query(self, query: str, use_gemini: bool = True, session_id: str = "default") -> Dict:
+        """Answer a user query with conversation context"""
         query = query.strip()
+        
+        # Initialize session context if not exists
+        if session_id not in self.conversation_context:
+            self.conversation_context[session_id] = {'last_scheme': None, 'last_scheme_data': None}
         
         # Detect question type (using Gemini if enabled)
         if use_gemini:
@@ -439,6 +542,11 @@ Answer:"""
         else:
             scheme_name = self.extract_scheme_name_fallback(query)
         
+        # If no scheme name found, check conversation context for previously mentioned fund
+        if not scheme_name and self.conversation_context[session_id]['last_scheme']:
+            scheme_name = self.conversation_context[session_id]['last_scheme']
+            print(f"Using context: {scheme_name}")
+        
         if not scheme_name:
             if question_type == 'statements':
                 answer, source_url = self.get_fact_answer({}, 'statements')
@@ -448,6 +556,9 @@ Answer:"""
                     'question_type': question_type,
                     'scheme_name': None,
                 }
+            elif question_type == 'general':
+                # Handle general mutual fund questions
+                return self.handle_general_question(query)
             else:
                 return {
                     'answer': (
@@ -473,6 +584,10 @@ Answer:"""
                 'question_type': question_type,
                 'scheme_name': scheme_name,
             }
+        
+        # Save scheme to conversation context
+        self.conversation_context[session_id]['last_scheme'] = scheme['scheme_name']
+        self.conversation_context[session_id]['last_scheme_data'] = scheme
         
         # Generate answer (using Gemini for natural language if enabled)
         if use_gemini and question_type not in ['statements', 'opinionated']:

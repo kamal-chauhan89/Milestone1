@@ -9,6 +9,8 @@ from faq_assistant_backend import FAQAssistant
 import os
 
 app = Flask(__name__)
+app.config['JSON_SORT_KEYS'] = False
+app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
 CORS(app)  # Enable CORS for frontend integration
 
 # Initialize FAQ assistant
