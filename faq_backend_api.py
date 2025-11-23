@@ -245,7 +245,8 @@ def health_check():
     
     return jsonify({
         'status': 'healthy',
-        'database': stats
+        'database': stats,
+        'message': f'API is running with {stats["total_funds"]} mutual funds loaded'
     })
 
 
