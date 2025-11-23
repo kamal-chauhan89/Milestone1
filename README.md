@@ -2,6 +2,8 @@
 
 An intelligent FAQ chatbot for Groww mutual funds that provides accurate, factual information about mutual fund schemes using AI-powered natural language understanding.
 
+🌐 **Live Demo**: [https://kamal-chauhan89.github.io/Milestone1/](https://kamal-chauhan89.github.io/Milestone1/)
+
 ## Overview
 
 This chatbot helps users get instant answers to questions about mutual funds, including expense ratios, exit loads, minimum SIP amounts, lock-in periods, risk levels, portfolio composition, and more. It uses Retrieval-Augmented Generation (RAG) to provide accurate, data-driven responses.
@@ -97,3 +99,9 @@ The API server will run on `http://localhost:5000` and the chatbot will connect 
 ## Note
 
 This chatbot provides factual information only and does not offer investment advice. For personalized investment recommendations, please consult a certified financial advisor.
+
+## Deployment
+
+- **Frontend Demo**: Deployed on GitHub Pages at [https://kamal-chauhan89.github.io/Milestone1/](https://kamal-chauhan89.github.io/Milestone1/)
+- **Full Deployment Guide**: See [DEPLOYMENT.md](DEPLOYMENT.md) for complete deployment instructions
+- **Recommended Backend Hosting**: Render.com, Railway.app, or Heroku
