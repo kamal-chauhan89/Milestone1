@@ -1,115 +1,41 @@
 # Deployment Guide
 
-## GitHub Pages Deployment (Frontend Demo)
+## Railway Deployment
 
-The frontend is already deployed on GitHub Pages at: `https://kamal-chauhan89.github.io/Milestone1/`
-
-This shows a demo version with deployment instructions.
-
-## Full Application Deployment
-
-To deploy the complete chatbot with backend functionality:
-
-### Option 1: Render.com (Recommended - Free Tier Available)
-
-1. **Create Render Account**
-   - Go to https://render.com
-   - Sign up with GitHub
-
-2. **Deploy Backend**
-   - Click "New +" → "Web Service"
-   - Connect your GitHub repository: `kamal-chauhan89/Milestone1`
-   - Configure:
-     - **Name**: `groww-faq-backend`
-     - **Environment**: Python 3
-     - **Build Command**: `pip install -r requirements.txt`
-     - **Start Command**: `python api_server.py`
-   
-3. **Add Environment Variables**
-   - Add: `GOOGLE_GEMINI_API_KEY` = `your_api_key`
-   - Add: `PORT` = `5000`
-
-4. **Deploy**
-   - Click "Create Web Service"
-   - Wait for deployment (5-10 minutes)
-   - Copy your backend URL (e.g., `https://groww-faq-backend.onrender.com`)
-
-5. **Update Frontend**
-   - Edit `chatbot.html`
-   - Change `API_URL` to your Render backend URL
-   - Commit and push changes
-
-### Option 2: Railway.app
-
-1. Visit https://railway.app
-2. Click "Start a New Project" → "Deploy from GitHub repo"
-3. Select `kamal-chauhan89/Milestone1`
-4. Add environment variable: `GOOGLE_GEMINI_API_KEY`
-5. Railway will auto-detect Python and deploy
-6. Get your app URL and update `chatbot.html`
-
-### Option 3: Heroku
-
-1. Install Heroku CLI
-2. Create `Procfile`:
+1. Create a new Railway project
+2. Connect your GitHub repository
+3. Railway will automatically detect the Python project
+4. The [railway.toml](file:///c%3A/Users/sweet/projects/railway.toml) file provides the start command:
    ```
-   web: python api_server.py
+   gunicorn -w 4 -b 0.0.0.0:$PORT faq_backend_api:app
    ```
-3. Deploy:
+5. Set environment variables in Railway:
+   - `PORT` (automatically provided by Railway)
+
+## Manual Deployment Steps
+
+1. Install dependencies:
    ```bash
-   heroku create groww-faq-chatbot
-   heroku config:set GOOGLE_GEMINI_API_KEY=your_key
-   git push heroku main
+   pip install -r requirements.txt
    ```
 
-### Option 4: Local Development
+2. Start the server:
+   ```bash
+   python faq_backend_api.py
+   ```
+
+## API Endpoints
+
+- `POST /query` - Answer a query
+- `GET /funds` - List all funds
+- `GET /fund/<name>` - Get fund details
+- `GET /examples` - Get example questions
+- `GET /health` - Health check
+
+## Example Query
 
 ```bash
-# Clone repository
-git clone https://github.com/kamal-chauhan89/Milestone1.git
-cd Milestone1
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Create .env file
-echo "GOOGLE_GEMINI_API_KEY=your_api_key_here" > .env
-
-# Run backend
-python api_server.py
-
-# Open chatbot
-start chatbot.html
+curl -X POST https://your-app-url.up.railway.app/query \
+  -H "Content-Type: application/json" \
+  -d '{"query": "Expense ratio of HDFC Mid Cap Fund?"}'
 ```
-
-## Testing Deployment
-
-Once backend is deployed:
-
-1. Visit your backend URL + `/health` (e.g., `https://your-app.onrender.com/health`)
-2. You should see: `{"status":"healthy","schemes_loaded":373}`
-3. Open `chatbot.html` and start asking questions!
-
-## CORS Configuration
-
-The Flask backend already has CORS enabled for all origins. If you need to restrict:
-
-Edit `api_server.py`:
-```python
-CORS(app, origins=["https://kamal-chauhan89.github.io"])
-```
-
-## Troubleshooting
-
-**Backend not responding:**
-- Check environment variables are set correctly
-- Verify API key is valid
-- Check logs in your hosting platform
-
-**CORS errors:**
-- Ensure Flask-CORS is installed
-- Check CORS configuration in `api_server.py`
-
-**API key issues:**
-- Get new key from https://makersuite.google.com/app/apikey
-- Update environment variable in hosting platform

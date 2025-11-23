@@ -9,6 +9,8 @@ import re
 from typing import Dict, Optional, Tuple
 
 
+import os
+
 app = Flask(__name__)
 CORS(app)
 
@@ -267,4 +269,6 @@ if __name__ == '__main__':
     print('    -d \'{"query": "Expense ratio of Axis Bluechip Fund?"}\'')
     print("="*80)
     
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    # Use PORT from environment variable for Railway deployment
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
