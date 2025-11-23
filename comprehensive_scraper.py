@@ -169,17 +169,27 @@ class ComprehensiveScraper:
     
     def _extract_scheme_name(self, soup: BeautifulSoup) -> Optional[str]:
         """Extract scheme name"""
-        # Try h1 tag
+        # Try h1 tag - this is usually the most reliable
         h1 = soup.find('h1')
         if h1:
-            return h1.get_text(strip=True)
+            name = h1.get_text(strip=True)
+            # Clean up common issues
+            if name.endswith('Direct Plan Growth'):
+                return name
+            elif 'Direct Growth' in name:
+                return name
+            elif len(name) > 10:  # Reasonable length
+                return name
         
         # Try title tag
         title = soup.find('title')
         if title:
             text = title.get_text(strip=True)
-            # Clean up title
-            return text.split('|')[0].strip()
+            # Extract fund name from title (before "| Groww")
+            if '|' in text:
+                name = text.split('|')[0].strip()
+                if len(name) > 10:
+                    return name
         
         return None
     
@@ -241,15 +251,21 @@ class ComprehensiveScraper:
         text = soup.get_text()
         
         patterns = [
-            re.compile(r'exit\s*load\s*of\s*([\d.]+%[^.]+year[^.]*)', re.IGNORECASE),
-            re.compile(r'exit\s*load[:\s]*([\d.]+%[^.]+)', re.IGNORECASE),
-            re.compile(r'([\d.]+%\s*if\s*redeemed\s*within[^.]+)', re.IGNORECASE),
+            re.compile(r'exit\s*load\s*of\s*([\d.]+%[^.]+year[^.]*?)(?:\.|$)', re.IGNORECASE),
+            re.compile(r'exit\s*load[:\s]*([\d.]+%[^.]+?)(?:\.|$)', re.IGNORECASE),
+            re.compile(r'([\d.]+%\s*if\s*redeemed\s*within[^.]+?)(?:\.|$)', re.IGNORECASE),
         ]
         
         for pattern in patterns:
             match = pattern.search(text)
             if match:
-                return match.group(1).strip()
+                exit_load = match.group(1).strip()
+                # Clean up extra text
+                if 'Stamp duty' in exit_load:
+                    exit_load = exit_load.split('Stamp duty')[0].strip()
+                if exit_load.endswith('S'):
+                    exit_load = exit_load[:-1].strip()
+                return exit_load
         
         return None
     

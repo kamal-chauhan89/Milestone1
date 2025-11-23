@@ -43,12 +43,24 @@ class QueryProcessor:
         """Extract fund name from query"""
         query_lower = query.lower()
         
+        # Common fund name patterns to look for
+        fund_keywords = [
+            'hdfc', 'icici', 'sbi', 'axis', 'kotak', 'reliance', 'tata', 'birla',
+            'mid cap', 'large cap', 'small cap', 'bluechip', 'equity', 'debt',
+            'hybrid', 'elss', 'tax saver', 'flexi cap', 'focused', 'balanced'
+        ]
+        
         # Try to find fund name by searching database
         for fund in db.get_all_funds():
             fund_name = fund.get('scheme_name', '')
+            fund_name_lower = fund_name.lower()
             
-            # Check if significant part of fund name is in query
-            name_parts = fund_name.lower().split()
+            # Check if fund name is in query
+            if fund_name_lower in query_lower:
+                return fund_name
+            
+            # Check if significant parts of fund name are in query
+            name_parts = fund_name_lower.split()
             
             # Need at least 2 words to match (to avoid false positives)
             if len(name_parts) >= 2:
