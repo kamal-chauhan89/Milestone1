@@ -17,7 +17,7 @@
    - Click "Advanced" or "Environment"
    - Add variable:
      - Key: `GOOGLE_GEMINI_API_KEY`
-     - Value: `AIzaSyD2vsUOUp0OmtvDuCxLYi5lVDaSRyvaOT0` (your current key)
+     - Value: `your_google_gemini_api_key_here`
 7. **Create Web Service** (click the button)
 8. **Wait 5-10 minutes** for deployment
 9. **Copy your URL**: It will look like `https://groww-faq-backend.onrender.com`
