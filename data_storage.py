@@ -49,6 +49,8 @@ class MutualFundDataStore:
             'facts': {
                 'expense_ratio': scheme.get('expense_ratio'),
                 'exit_load': scheme.get('exit_load'),
+                'stamp_duty': scheme.get('stamp_duty'),
+                'tax_implications': scheme.get('tax_implications'),
                 'minimum_sip': scheme.get('minimum_investment', {}).get('min_sip'),
                 'minimum_lumpsum': scheme.get('minimum_investment', {}).get('min_lumpsum'),
                 'first_investment': scheme.get('minimum_investment', {}).get('first_investment'),
