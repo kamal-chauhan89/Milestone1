@@ -1,0 +1,44 @@
+[
+  {
+    "scheme_name": "HDFC Mid Cap Fund Direct Growth",
+    "expense_ratio": "0.71%",
+    "lock_in": "3 years",
+    "minimum_sip": "Information not available",
+    "exit_load": "1% if redeemed within 1 year",
+    "riskometer": "Very High",
+    "benchmark": "Information not available",
+    "nav": "Information not available",
+    "fund_manager": "of HDFC Mid",
+    "stamp_duty": "0.005% (from July 1st, 2020)",
+    "tax_implications": "If you redeem within one year, returns are taxed at 20%. If you redeem after one year, returns exceeding Rs 1.25 lakh in a financial year are taxed at 12.5%.",
+    "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth"
+  },
+  {
+    "scheme_name": "HDFC Focused Fund Direct Growth",
+    "expense_ratio": "0.62%",
+    "lock_in": "3 years",
+    "minimum_sip": "Information not available",
+    "exit_load": "1% if redeemed within 1 year",
+    "riskometer": "Very High",
+    "benchmark": "Information not available",
+    "nav": "Information not available",
+    "fund_manager": "of HDFC Focused",
+    "stamp_duty": "0.005% (from July 1st, 2020)",
+    "tax_implications": "If you redeem within one year, returns are taxed at 20%. If you redeem after one year, returns exceeding Rs 1.25 lakh in a financial year are taxed at 12.5%.",
+    "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth"
+  },
+  {
+    "scheme_name": "HDFC Flexi Cap Direct Plan Growth",
+    "expense_ratio": "0.67%",
+    "lock_in": "3 years",
+    "minimum_sip": "Information not available",
+    "exit_load": "1% if redeemed within 1 year",
+    "riskometer": "Very High",
+    "benchmark": "Information not available",
+    "nav": "Information not available",
+    "fund_manager": "of HDFC Flexi",
+    "stamp_duty": "0.005% (from July 1st, 2020)",
+    "tax_implications": "If you redeem within one year, returns are taxed at 20%. If you redeem after one year, returns exceeding Rs 1.25 lakh in a financial year are taxed at 12.5%.",
+    "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth"
+  }
+]

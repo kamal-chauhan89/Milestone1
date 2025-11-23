@@ -1,0 +1,509 @@
+{
+  "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+  "scraped_at": "2025-11-23T23:16:40.301015",
+  "scheme_name": "HDFC Mid Cap Fund Direct Growth",
+  "category": "Equity",
+  "nav": "223.28",
+  "expense_ratio": "0.71%",
+  "exit_load": "1% if redeemed within 1 year",
+  "stamp_duty": "0.005% (from July 1st, 2020)Tax implicationIf you redeem within one year, returns are taxed at 20%",
+  "tax_implications": "If you redeem within one year, returns are taxed at 20%. If you redeem after one year, returns exceeding Rs 1.25 lakh in a financial year are taxed at 12.5%.",
+  "minimum_investment": {
+    "first_investment": "100",
+    "subsequent_investment": "100",
+    "min_sip": "100",
+    "min_lumpsum": null
+  },
+  "lock_in": "3 years (ELSS)",
+  "riskometer": ", fund size and moreTrack FundsImport funds and track all investments in a single placeCompare FundsMoreSIP calculatorEstimate returns on a SIPBrokerage calculatorEstimate charges for your trade/investmentMargin calculatorEstimate balance needed to buy/sell a stockSWP calculatorReturns on your systematic withdrawal planPricingBrokerage and charges on GrowwBlogHDFC Mid Cap Fund Direct GrowthEquityMid CapVery High Risk+26",
+  "benchmark": "NIFTY Midcap 150 Total Return IndexScheme Information Document(SID)Fund house contact detailsAddress\"HDFC House\", 2nd Floor, H",
+  "fund_size": "89,383.23CrR",
+  "fund_manager": "sNFO’sTrack all active NFOs in one placeMutual Funds by GrowwMutual funds by Groww designed for your investment goalsMutual Funds screenerFilter funds based on risk, fund size and moreTrack FundsImport funds and track all investments in a single placeCompare FundsMoreSIP calculatorEstimate returns on a SIPBrokerage calculatorEstimate charges for your trade/investmentMargin calculatorEstimate balance needed to buy/sell a stockSWP calculatorReturns on your systematic withdrawal planPricingBrokerage and charges on GrowwBlogHDFC Mid Cap Fund Direct GrowthEquityMid CapVery High Risk+26",
+  "holdings": [
+    {
+      "name": "Max Financial Services Ltd.",
+      "sector": "Financial",
+      "instrument": "Equity",
+      "assets": "4.46%"
+    },
+    {
+      "name": "AU Small Finance Bank Ltd.",
+      "sector": "Financial",
+      "instrument": "Equity",
+      "assets": "3.70%"
+    },
+    {
+      "name": "Indian Bank",
+      "sector": "Financial",
+      "instrument": "Equity",
+      "assets": "3.54%"
+    },
+    {
+      "name": "The Federal Bank Ltd.",
+      "sector": "Financial",
+      "instrument": "Equity",
+      "assets": "3.38%"
+    },
+    {
+      "name": "Balkrishna Industries Ltd.",
+      "sector": "Automobile",
+      "instrument": "Equity",
+      "assets": "3.37%"
+    },
+    {
+      "name": "Fortis Healthcare Ltd.",
+      "sector": "Healthcare",
+      "instrument": "Equity",
+      "assets": "3.19%"
+    },
+    {
+      "name": "Coforge Ltd.",
+      "sector": "Technology",
+      "instrument": "Equity",
+      "assets": "3.11%"
+    },
+    {
+      "name": "Hindustan Petroleum Corporation Ltd.",
+      "sector": "Energy",
+      "instrument": "Equity",
+      "assets": "2.96%"
+    },
+    {
+      "name": "Glenmark Pharmaceuticals Ltd.",
+      "sector": "Healthcare",
+      "instrument": "Equity",
+      "assets": "2.67%"
+    },
+    {
+      "name": "Ipca Laboratories Ltd.",
+      "sector": "Healthcare",
+      "instrument": "Equity",
+      "assets": "2.52%"
+    },
+    {
+      "name": "Vishal Mega Mart Ltd.",
+      "sector": "Services",
+      "instrument": "Equity",
+      "assets": "2.44%"
+    },
+    {
+      "name": "Apollo Tyres Ltd.",
+      "sector": "Automobile",
+      "instrument": "Equity",
+      "assets": "2.35%"
+    },
+    {
+      "name": "Tata Communications Ltd.",
+      "sector": "Communication",
+      "instrument": "Equity",
+      "assets": "2.34%"
+    },
+    {
+      "name": "Persistent Systems Ltd.",
+      "sector": "Technology",
+      "instrument": "Equity",
+      "assets": "2.21%"
+    },
+    {
+      "name": "Mahindra & Mahindra Financial Services Ltd.",
+      "sector": "Financial",
+      "instrument": "Equity",
+      "assets": "2.19%"
+    },
+    {
+      "name": "Cummins India Ltd.",
+      "sector": "Capital Goods",
+      "instrument": "Equity",
+      "assets": "2.16%"
+    },
+    {
+      "name": "Marico Ltd.",
+      "sector": "Consumer Staples",
+      "instrument": "Equity",
+      "assets": "2.13%"
+    },
+    {
+      "name": "Jindal Steel Ltd.",
+      "sector": "Metals & Mining",
+      "instrument": "Equity",
+      "assets": "1.82%"
+    },
+    {
+      "name": "Aurobindo Pharma Ltd.",
+      "sector": "Healthcare",
+      "instrument": "Equity",
+      "assets": "1.70%"
+    },
+    {
+      "name": "Union Bank of India",
+      "sector": "Financial",
+      "instrument": "Equity",
+      "assets": "1.61%"
+    },
+    {
+      "name": "Delhivery Ltd.",
+      "sector": "Services",
+      "instrument": "Equity",
+      "assets": "1.58%"
+    },
+    {
+      "name": "Bosch Ltd.",
+      "sector": "Automobile",
+      "instrument": "Equity",
+      "assets": "1.53%"
+    },
+    {
+      "name": "PB Fintech Ltd.",
+      "sector": "Services",
+      "instrument": "Equity",
+      "assets": "1.42%"
+    },
+    {
+      "name": "The Indian Hotels Company Ltd.",
+      "sector": "Services",
+      "instrument": "Equity",
+      "assets": "1.40%"
+    },
+    {
+      "name": "Dabur India Ltd.",
+      "sector": "Consumer Staples",
+      "instrument": "Equity",
+      "assets": "1.32%"
+    },
+    {
+      "name": "Mphasis Ltd.",
+      "sector": "Technology",
+      "instrument": "Equity",
+      "assets": "1.29%"
+    },
+    {
+      "name": "Eternal Ltd.",
+      "sector": "Services",
+      "instrument": "Equity",
+      "assets": "1.28%"
+    },
+    {
+      "name": "Gland Pharma Ltd.",
+      "sector": "Healthcare",
+      "instrument": "Equity",
+      "assets": "1.26%"
+    },
+    {
+      "name": "AIA Engineering Ltd.",
+      "sector": "Metals & Mining",
+      "instrument": "Equity",
+      "assets": "1.21%"
+    },
+    {
+      "name": "Indraprastha Gas Ltd.",
+      "sector": "Energy",
+      "instrument": "Equity",
+      "assets": "1.21%"
+    },
+    {
+      "name": "Hexaware Technologies Ltd.",
+      "sector": "Technology",
+      "instrument": "Equity",
+      "assets": "1.14%"
+    },
+    {
+      "name": "Star Health and Allied Insurance Company Ltd.",
+      "sector": "Insurance",
+      "instrument": "Equity",
+      "assets": "1.14%"
+    },
+    {
+      "name": "Karur Vysya Bank Ltd.",
+      "sector": "Financial",
+      "instrument": "Equity",
+      "assets": "1.08%"
+    },
+    {
+      "name": "Coromandel International Ltd.",
+      "sector": "Chemicals",
+      "instrument": "Equity",
+      "assets": "1.02%"
+    },
+    {
+      "name": "Redington Ltd.",
+      "sector": "Services",
+      "instrument": "Equity",
+      "assets": "1.01%"
+    },
+    {
+      "name": "ACC Ltd.",
+      "sector": "Construction",
+      "instrument": "Equity",
+      "assets": "1.00%"
+    },
+    {
+      "name": "Escorts Kubota Ltd.",
+      "sector": "Automobile",
+      "instrument": "Equity",
+      "assets": "0.99%"
+    },
+    {
+      "name": "Nippon Life India Asset Management Ltd.",
+      "sector": "Financial",
+      "instrument": "Equity",
+      "assets": "0.97%"
+    },
+    {
+      "name": "Bharat Forge Ltd.",
+      "sector": "Automobile",
+      "instrument": "Equity",
+      "assets": "0.95%"
+    },
+    {
+      "name": "Alkem Laboratories Ltd.",
+      "sector": "Healthcare",
+      "instrument": "Equity",
+      "assets": "0.95%"
+    },
+    {
+      "name": "Crompton Greaves Consumer Electricals Ltd.",
+      "sector": "Consumer Discretionary",
+      "instrument": "Equity",
+      "assets": "0.91%"
+    },
+    {
+      "name": "Dixon Technologies (India) Ltd.",
+      "sector": "Capital Goods",
+      "instrument": "Equity",
+      "assets": "0.89%"
+    },
+    {
+      "name": "KEC International Ltd.",
+      "sector": "Capital Goods",
+      "instrument": "Equity",
+      "assets": "0.83%"
+    },
+    {
+      "name": "Indusind Bank Ltd.",
+      "sector": "Financial",
+      "instrument": "Equity",
+      "assets": "0.82%"
+    },
+    {
+      "name": "Sundram Fasteners Ltd.",
+      "sector": "Capital Goods",
+      "instrument": "Equity",
+      "assets": "0.77%"
+    },
+    {
+      "name": "Timken India Ltd.",
+      "sector": "Capital Goods",
+      "instrument": "Equity",
+      "assets": "0.76%"
+    },
+    {
+      "name": "Godrej Consumer Products Ltd.",
+      "sector": "Consumer Staples",
+      "instrument": "Equity",
+      "assets": "0.73%"
+    },
+    {
+      "name": "SKF India (Industrial) Ltd.",
+      "sector": "Capital Goods",
+      "instrument": "Equity",
+      "assets": "0.71%"
+    },
+    {
+      "name": "Supreme Industries Ltd.",
+      "sector": "Chemicals",
+      "instrument": "Equity",
+      "assets": "0.71%"
+    },
+    {
+      "name": "City Union Bank Ltd.",
+      "sector": "Financial",
+      "instrument": "Equity",
+      "assets": "0.67%"
+    },
+    {
+      "name": "United Spirits Ltd.",
+      "sector": "Consumer Staples",
+      "instrument": "Equity",
+      "assets": "0.64%"
+    },
+    {
+      "name": "Gujarat Fluorochemicals Ltd.",
+      "sector": "Chemicals",
+      "instrument": "Equity",
+      "assets": "0.58%"
+    },
+    {
+      "name": "SKF India Ltd.",
+      "sector": "Capital Goods",
+      "instrument": "Equity",
+      "assets": "0.56%"
+    },
+    {
+      "name": "Sona BLW Precision Forgings Ltd.",
+      "sector": "Automobile",
+      "instrument": "Equity",
+      "assets": "0.48%"
+    },
+    {
+      "name": "Cholamandalam Financial Holdings Ltd.",
+      "sector": "Financial",
+      "instrument": "Equity",
+      "assets": "0.48%"
+    },
+    {
+      "name": "Emami Ltd.",
+      "sector": "Consumer Staples",
+      "instrument": "Equity",
+      "assets": "0.44%"
+    },
+    {
+      "name": "Greenlam Industries Ltd.",
+      "sector": "Consumer Staples",
+      "instrument": "Equity",
+      "assets": "0.44%"
+    },
+    {
+      "name": "Vesuvius India Ltd.",
+      "sector": "Construction",
+      "instrument": "Equity",
+      "assets": "0.41%"
+    },
+    {
+      "name": "Ceat Ltd.",
+      "sector": "Automobile",
+      "instrument": "Equity",
+      "assets": "0.41%"
+    },
+    {
+      "name": "Symphony Ltd.",
+      "sector": "Consumer Discretionary",
+      "instrument": "Equity",
+      "assets": "0.39%"
+    },
+    {
+      "name": "Vardhman Textiles Ltd.",
+      "sector": "Textiles",
+      "instrument": "Equity",
+      "assets": "0.35%"
+    },
+    {
+      "name": "KNR Constructions Ltd.",
+      "sector": "Construction",
+      "instrument": "Equity",
+      "assets": "0.33%"
+    },
+    {
+      "name": "Aarti Industries Ltd.",
+      "sector": "Chemicals",
+      "instrument": "Equity",
+      "assets": "0.33%"
+    },
+    {
+      "name": "Oracle Financial Services Software Ltd.",
+      "sector": "Technology",
+      "instrument": "Equity",
+      "assets": "0.32%"
+    },
+    {
+      "name": "Arvind Ltd.",
+      "sector": "Textiles",
+      "instrument": "Equity",
+      "assets": "0.29%"
+    },
+    {
+      "name": "ICICI Lombard General Insurance Company Ltd.",
+      "sector": "Insurance",
+      "instrument": "Equity",
+      "assets": "0.29%"
+    },
+    {
+      "name": "Bharti Hexacom Ltd.",
+      "sector": "Communication",
+      "instrument": "Equity",
+      "assets": "0.28%"
+    },
+    {
+      "name": "Five-Star Business Finance Ltd.",
+      "sector": "Financial",
+      "instrument": "Equity",
+      "assets": "0.28%"
+    },
+    {
+      "name": "Navneet Education Ltd.",
+      "sector": "Consumer Staples",
+      "instrument": "Equity",
+      "assets": "0.28%"
+    },
+    {
+      "name": "Colgate-Palmolive (India) Ltd.",
+      "sector": "Consumer Staples",
+      "instrument": "Equity",
+      "assets": "0.20%"
+    },
+    {
+      "name": "LG Electronics India Ltd.",
+      "sector": "Consumer Discretionary",
+      "instrument": "Equity",
+      "assets": "0.19%"
+    },
+    {
+      "name": "Greenply Industries Ltd.",
+      "sector": "Consumer Staples",
+      "instrument": "Equity",
+      "assets": "0.19%"
+    },
+    {
+      "name": "Dhanuka Agritech Ltd.",
+      "sector": "Chemicals",
+      "instrument": "Equity",
+      "assets": "0.16%"
+    },
+    {
+      "name": "Greenpanel Industries Ltd.",
+      "sector": "Consumer Staples",
+      "instrument": "Equity",
+      "assets": "0.16%"
+    },
+    {
+      "name": "Jagran Prakashan Ltd.",
+      "sector": "Consumer Staples",
+      "instrument": "Equity",
+      "assets": "0.06%"
+    }
+  ],
+  "sector_allocation": {
+    "Financial": "0.28%",
+    "Automobile": "0.41%",
+    "Healthcare": "0.95%",
+    "Technology": "0.32%",
+    "Energy": "1.21%",
+    "Services": "1.01%",
+    "Communication": "0.28%",
+    "Capital Goods": "0.56%",
+    "Consumer Staples": "0.06%",
+    "Metals & Mining": "1.21%",
+    "Insurance": "0.29%",
+    "Chemicals": "0.16%",
+    "Construction": "0.33%",
+    "Consumer Discretionary": "0.19%",
+    "Textiles": "0.29%",
+    "Equity": "4.46%"
+  },
+  "debt_cash_analysis": {
+    "total_debt": null,
+    "total_cash": null,
+    "debt_breakdown": {},
+    "cash_breakdown": {}
+  },
+  "return_calculator": {
+    "has_calculator": true,
+    "calculator_url": "https://groww.in/calculators/sip-calculator"
+  },
+  "additional_links": {
+    "kim_url": null,
+    "sid_url": null,
+    "factsheet_url": null,
+    "faq_url": null,
+    "fee_charges_url": null
+  }
+}
