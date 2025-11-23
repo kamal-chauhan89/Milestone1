@@ -1,0 +1,1461 @@
+{
+  "created_at": "2025-11-23T19:48:38.801949",
+  "total_schemes": 373,
+  "scheme_names": {
+    "axis small cap fund direct growth": [
+      "axis-small-cap-fund-direct-growth"
+    ],
+    "icici prudential debt management fund (fof) direct plan growth": [
+      "icici-prudential-debt-management-fund-fof-direct-plan-growth"
+    ],
+    "invesco india arbitrage fund direct growth": [
+      "invesco-india-arbitrage-fund-direct-growth"
+    ],
+    "mutual funds starting with 'n'": [
+      "mutual-funds-starting-with-n"
+    ],
+    "hdfc gold etf fund of fund direct plan growth": [
+      "hdfc-gold-etf-fund-of-fund-direct-plan-growth"
+    ],
+    "motilal oswal asset allocation passive fof conservative direct growth": [
+      "motilal-oswal-asset-allocation-passive-fof-conservative-direct-growth"
+    ],
+    "quant multi cap fund direct growth": [
+      "quant-multi-cap-fund-direct-growth"
+    ],
+    "trustmf overnight fund direct growth": [
+      "trustmf-overnight-fund-direct-growth"
+    ],
+    "asset management company (amc)": [
+      "asset-management-company-amc"
+    ],
+    "aditya birla sun life money manager fund direct growth": [
+      "aditya-birla-sun-life-money-manager-fund-direct-growth"
+    ],
+    "lic mf overnight fund direct growth": [
+      "lic-mf-overnight-fund-direct-growth"
+    ],
+    "all mutual funds": [
+      "all-mutual-funds",
+      "all-mutual-funds",
+      "all-mutual-funds",
+      "all-mutual-funds",
+      "all-mutual-funds",
+      "all-mutual-funds",
+      "all-mutual-funds",
+      "all-mutual-funds",
+      "all-mutual-funds",
+      "all-mutual-funds",
+      "all-mutual-funds",
+      "all-mutual-funds",
+      "all-mutual-funds",
+      "all-mutual-funds",
+      "all-mutual-funds",
+      "all-mutual-funds",
+      "all-mutual-funds",
+      "all-mutual-funds",
+      "all-mutual-funds",
+      "all-mutual-funds",
+      "all-mutual-funds"
+    ],
+    "ppfas mutual fund": [
+      "ppfas-mutual-fund"
+    ],
+    "baroda bnp paribas overnight fund direct growth": [
+      "baroda-bnp-paribas-overnight-fund-direct-growth"
+    ],
+    "franklin india multi cap fund direct growth": [
+      "franklin-india-multi-cap-fund-direct-growth"
+    ],
+    "invesco mutual fund": [
+      "invesco-mutual-fund"
+    ],
+    "sbi magnum medium duration fund direct growth": [
+      "sbi-magnum-medium-duration-fund-direct-growth"
+    ],
+    "sbi silver etf fof direct growth": [
+      "sbi-silver-etf-fof-direct-growth"
+    ],
+    "franklin india medium to long duration fund direct growth": [
+      "franklin-india-medium-to-long-duration-fund-direct-growth"
+    ],
+    "sundaram medium duration fund direct growth": [
+      "sundaram-medium-duration-fund-direct-growth"
+    ],
+    "bank of india small cap fund direct growth": [
+      "bank-of-india-small-cap-fund-direct-growth"
+    ],
+    "mirae asset elss tax saver fund direct growth": [
+      "mirae-asset-elss-tax-saver-fund-direct-growth"
+    ],
+    "axis multicap fund direct growth": [
+      "axis-multicap-fund-direct-growth"
+    ],
+    "sbi magnum low duration fund direct plan growth": [
+      "sbi-magnum-low-duration-fund-direct-plan-growth"
+    ],
+    "groww nifty non cyclical consumer index fund direct growth": [
+      "groww-nifty-non-cyclical-consumer-index-fund-direct-growth"
+    ],
+    "baroda bnp paribas multi cap fund direct growth": [
+      "baroda-bnp-paribas-multi-cap-fund-direct-growth"
+    ],
+    "uti overnight fund direct growth": [
+      "uti-overnight-fund-direct-growth"
+    ],
+    "edelweiss large & mid cap direct plan growth": [
+      "edelweiss-large-and-mid-cap-direct-plan-growth"
+    ],
+    "icici prudential gilt fund direct plan growth": [
+      "icici-prudential-gilt-fund-direct-plan-growth"
+    ],
+    "nippon india multi cap fund direct growth": [
+      "nippon-india-multi-cap-fund-direct-growth"
+    ],
+    "quantum gold savings fund direct growth": [
+      "quantum-gold-savings-fund-direct-growth"
+    ],
+    "quant infrastructure fund direct growth": [
+      "quant-infrastructure-fund-direct-growth"
+    ],
+    "uti money market fund direct growth": [
+      "uti-money-market-fund-direct-growth"
+    ],
+    "aditya birla sun life arbitrage fund direct growth": [
+      "aditya-birla-sun-life-arbitrage-fund-direct-growth"
+    ],
+    "icici prudential retirement fund pure equity plan direct growth": [
+      "icici-prudential-retirement-fund-pure-equity-plan-direct-growth"
+    ],
+    "shriram mutual fund": [
+      "shriram-mutual-fund"
+    ],
+    "mutual funds starting with \"v\" – groww funds list": [
+      "mutual-funds-starting-with-v--groww-funds-list"
+    ],
+    "icici prudential money market direct growth": [
+      "icici-prudential-money-market-direct-growth"
+    ],
+    "jm medium to long duration fund direct growth": [
+      "jm-medium-to-long-duration-fund-direct-growth"
+    ],
+    "bandhan bond fund medium term plan direct growth": [
+      "bandhan-bond-fund-medium-term-plan-direct-growth"
+    ],
+    "icici prudential large & mid cap fund direct plan growth": [
+      "icici-prudential-large-and-mid-cap-fund-direct-plan-growth"
+    ],
+    "nippon india conservative hybrid fund direct growth": [
+      "nippon-india-conservative-hybrid-fund-direct-growth"
+    ],
+    "motilal oswal gold and silver etfs fof direct growth": [
+      "motilal-oswal-gold-and-silver-etfs-fof-direct-growth"
+    ],
+    "uti large & mid cap fund direct growth": [
+      "uti-large-and-mid-cap-fund-direct-growth"
+    ],
+    "hdfc income fund direct growth": [
+      "hdfc-income-fund-direct-growth"
+    ],
+    "mutual funds starting with 't'": [
+      "mutual-funds-starting-with-t"
+    ],
+    "mutual funds starting with 'g'": [
+      "mutual-funds-starting-with-g"
+    ],
+    "mutual funds starting with 's'": [
+      "mutual-funds-starting-with-s"
+    ],
+    "icici prudential constant maturity gilt fund direct growth": [
+      "icici-prudential-constant-maturity-gilt-fund-direct-growth"
+    ],
+    "hsbc overnight fund direct growth": [
+      "hsbc-overnight-fund-direct-growth"
+    ],
+    "groww aggressive hybrid fund direct growth": [
+      "groww-aggressive-hybrid-fund-direct-growth"
+    ],
+    "motilal oswal large and midcap fund direct growth": [
+      "motilal-oswal-large-and-midcap-fund-direct-growth"
+    ],
+    "sbi mutual fund": [
+      "sbi-mutual-fund"
+    ],
+    "groww arbitrage fund direct growth": [
+      "groww-arbitrage-fund-direct-growth"
+    ],
+    "aditya birla sun life gold fund direct growth": [
+      "aditya-birla-sun-life-gold-fund-direct-growth"
+    ],
+    "capitalmind flexi cap fund direct growth": [
+      "capitalmind-flexi-cap-fund-direct-growth"
+    ],
+    "best high risk mutual funds": [
+      "best-high-risk-mutual-funds"
+    ],
+    "hdfc balanced advantage fund direct growth": [
+      "hdfc-balanced-advantage-fund-direct-growth",
+      "hdfc-balanced-advantage-fund-direct-growth"
+    ],
+    "aditya birla sun life multi cap fund direct growth": [
+      "aditya-birla-sun-life-multi-cap-fund-direct-growth"
+    ],
+    "dsp mutual fund": [
+      "dsp-mutual-fund"
+    ],
+    "hdfc long duration debt fund direct growth": [
+      "hdfc-long-duration-debt-fund-direct-growth"
+    ],
+    "mirae asset money market fund direct growth": [
+      "mirae-asset-money-market-fund-direct-growth"
+    ],
+    "lic mf low duration fund direct growth": [
+      "lic-mf-low-duration-fund-direct-growth"
+    ],
+    "uti medium to long duration fund direct growth": [
+      "uti-medium-to-long-duration-fund-direct-growth"
+    ],
+    "the wealth company ethical fund direct growth": [
+      "the-wealth-company-ethical-fund-direct-growth"
+    ],
+    "invesco india large & mid cap fund direct growth": [
+      "invesco-india-large-and-mid-cap-fund-direct-growth"
+    ],
+    "baroda bnp paribas large & mid cap fund direct growth": [
+      "baroda-bnp-paribas-large-and-mid-cap-fund-direct-growth"
+    ],
+    "edelweiss mutual fund": [
+      "edelweiss-mutual-fund"
+    ],
+    "quant small cap fund direct plan growth": [
+      "quant-small-cap-fund-direct-plan-growth"
+    ],
+    "hsbc banking and psu debt fund direct growth": [
+      "hsbc-banking-and-psu-debt-fund-direct-growth"
+    ],
+    "mutual funds starting with 'i'": [
+      "mutual-funds-starting-with-i"
+    ],
+    "hsbc mutual fund": [
+      "hsbc-mutual-fund"
+    ],
+    "mutual funds - others": [
+      "mutual-funds---others"
+    ],
+    "sundaram mutual fund": [
+      "sundaram-mutual-fund"
+    ],
+    "groww banking & financial services fund direct growth": [
+      "groww-banking-and-financial-services-fund-direct-growth"
+    ],
+    "edelweiss gold and silver etf fof direct growth": [
+      "edelweiss-gold-and-silver-etf-fof-direct-growth"
+    ],
+    "mahindra manulife low duration fund direct growth": [
+      "mahindra-manulife-low-duration-fund-direct-growth"
+    ],
+    "best low risk mutual funds": [
+      "best-low-risk-mutual-funds"
+    ],
+    "tata treasury advantage direct plan growth": [
+      "tata-treasury-advantage-direct-plan-growth"
+    ],
+    "kotak multicap fund direct growth": [
+      "kotak-multicap-fund-direct-growth"
+    ],
+    "whiteoak mutual funds": [
+      "whiteoak-mutual-funds"
+    ],
+    "mirae asset mutual fund": [
+      "mirae-asset-mutual-fund"
+    ],
+    "tata arbitrage fund direct growth": [
+      "tata-arbitrage-fund-direct-growth"
+    ],
+    "mahindra manulife multi cap fund direct growth": [
+      "mahindra-manulife-multi-cap-fund-direct-growth"
+    ],
+    "list of all mutual funds categories": [
+      "list-of-all-mutual-funds-categories"
+    ],
+    "invesco india focused fund direct growth": [
+      "invesco-india-focused-fund-direct-growth"
+    ],
+    "bandhan overnight fund direct growth": [
+      "bandhan-overnight-fund-direct-growth"
+    ],
+    "mirae asset overnight fund direct growth": [
+      "mirae-asset-overnight-fund-direct-growth"
+    ],
+    "dsp overnight fund direct growth": [
+      "dsp-overnight-fund-direct-growth"
+    ],
+    "jio blackrock mutual fund": [
+      "jio-blackrock-mutual-fund"
+    ],
+    "sbi large & midcap fund direct plan growth": [
+      "sbi-large-and-midcap-fund-direct-plan-growth"
+    ],
+    "groww overnight fund direct growth": [
+      "groww-overnight-fund-direct-growth"
+    ],
+    "motilal oswal asset allocation passive fof aggressive direct growth": [
+      "motilal-oswal-asset-allocation-passive-fof-aggressive-direct-growth"
+    ],
+    "sbi equity hybrid fund direct plan growth": [
+      "sbi-equity-hybrid-fund-direct-plan-growth"
+    ],
+    "nippon india nifty 500 momentum 50 index fund direct growth": [
+      "nippon-india-nifty-500-momentum-50-index-fund-direct-growth"
+    ],
+    "franklin india money market fund direct growth": [
+      "franklin-india-money-market-fund-direct-growth"
+    ],
+    "icici prudential bond fund direct plan growth": [
+      "icici-prudential-bond-fund-direct-plan-growth"
+    ],
+    "kotak banking and psu debt fund direct growth": [
+      "kotak-banking-and-psu-debt-fund-direct-growth"
+    ],
+    "aditya birla sun life banking & psu debt fund direct growth": [
+      "aditya-birla-sun-life-banking-and-psu-debt-fund-direct-growth"
+    ],
+    "icici prudential bharat consumption fund direct growth": [
+      "icici-prudential-bharat-consumption-fund-direct-growth"
+    ],
+    "sbi long duration fund direct growth": [
+      "sbi-long-duration-fund-direct-growth"
+    ],
+    "kotak midcap fund direct growth": [
+      "kotak-midcap-fund-direct-growth"
+    ],
+    "tata mutual fund": [
+      "tata-mutual-fund"
+    ],
+    "mutual funds starting with 'a'": [
+      "mutual-funds-starting-with-a"
+    ],
+    "hdfc banking and psu debt fund direct growth": [
+      "hdfc-banking-and-psu-debt-fund-direct-growth"
+    ],
+    "motilal oswal 5 year g sec fof direct growth": [
+      "motilal-oswal-5-year-g-sec-fof-direct-growth"
+    ],
+    "uti nifty 50 index fund direct growth": [
+      "uti-nifty-50-index-fund-direct-growth"
+    ],
+    "groww nifty india defence etf fof direct growth": [
+      "groww-nifty-india-defence-etf-fof-direct-growth"
+    ],
+    "franklin templeton mutual fund": [
+      "franklin-templeton-mutual-fund"
+    ],
+    "union overnight fund direct growth": [
+      "union-overnight-fund-direct-growth"
+    ],
+    "mutual funds starting with 'b'": [
+      "mutual-funds-starting-with-b"
+    ],
+    "axis elss tax saver direct plan growth": [
+      "axis-elss-tax-saver-direct-plan-growth"
+    ],
+    "motilal oswal nifty india defence index fund direct growth": [
+      "motilal-oswal-nifty-india-defence-index-fund-direct-growth"
+    ],
+    "icici prudential banking & psu debt direct growth": [
+      "icici-prudential-banking-and-psu-debt-direct-growth"
+    ],
+    "groww dynamic bond fund direct growth": [
+      "groww-dynamic-bond-fund-direct-growth"
+    ],
+    "sbi contra direct plan growth": [
+      "sbi-contra-direct-plan-growth"
+    ],
+    "uti long duration fund direct growth": [
+      "uti-long-duration-fund-direct-growth"
+    ],
+    "quantum mutual fund": [
+      "quantum-mutual-fund"
+    ],
+    "axis money market fund direct growth": [
+      "axis-money-market-fund-direct-growth"
+    ],
+    "mutual funds starting with \"y\" – groww funds list": [
+      "mutual-funds-starting-with-y--groww-funds-list"
+    ],
+    "icici prudential india equity fof direct growth": [
+      "icici-prudential-india-equity-fof-direct-growth"
+    ],
+    "lic mutual fund": [
+      "lic-mutual-fund"
+    ],
+    "motilal oswal nifty 50 index fund direct growth": [
+      "motilal-oswal-nifty-50-index-fund-direct-growth"
+    ],
+    "quant multi asset allocation fund direct growth": [
+      "quant-multi-asset-allocation-fund-direct-growth"
+    ],
+    "axis strategic bond fund direct growth": [
+      "axis-strategic-bond-fund-direct-growth"
+    ],
+    "motilal oswal mutual fund": [
+      "motilal-oswal-mutual-fund"
+    ],
+    "icici prudential equity arbitrage direct growth": [
+      "icici-prudential-equity-arbitrage-direct-growth"
+    ],
+    "bandhan money market fund direct growth": [
+      "bandhan-money-market-fund-direct-growth"
+    ],
+    "nippon india gold savings fund direct growth": [
+      "nippon-india-gold-savings-fund-direct-growth"
+    ],
+    "mutual funds starting with 'z'": [
+      "mutual-funds-starting-with-z"
+    ],
+    "nippon india small cap fund direct growth": [
+      "nippon-india-small-cap-fund-direct-growth"
+    ],
+    "canara robeco income direct growth": [
+      "canara-robeco-income-direct-growth"
+    ],
+    "groww value fund direct growth": [
+      "groww-value-fund-direct-growth"
+    ],
+    "sbi arbitrage opportunities fund direct growth": [
+      "sbi-arbitrage-opportunities-fund-direct-growth"
+    ],
+    "canara robeco large cap fund direct growth": [
+      "canara-robeco-large-cap-fund-direct-growth"
+    ],
+    "trustmf banking & psu fund direct growth": [
+      "trustmf-banking-and-psu-fund-direct-growth"
+    ],
+    "axis silver fof direct growth": [
+      "axis-silver-fof-direct-growth"
+    ],
+    "kotak small cap fund direct growth": [
+      "kotak-small-cap-fund-direct-growth"
+    ],
+    "hdfc money market fund direct growth": [
+      "hdfc-money-market-fund-direct-growth"
+    ],
+    "invesco india flexi cap fund direct growth": [
+      "invesco-india-flexi-cap-fund-direct-growth"
+    ],
+    "bandhan government securities fund constant maturity direct growth": [
+      "bandhan-government-securities-fund-constant-maturity-direct-growth"
+    ],
+    "lic mf medium to long duration fund direct growth": [
+      "lic-mf-medium-to-long-duration-fund-direct-growth"
+    ],
+    "nj mutual funds": [
+      "nj-mutual-funds"
+    ],
+    "quant mutual fund": [
+      "quant-mutual-fund"
+    ],
+    "tata gold etf fof direct growth": [
+      "tata-gold-etf-fof-direct-growth"
+    ],
+    "the wealth company liquid fund direct growth": [
+      "the-wealth-company-liquid-fund-direct-growth"
+    ],
+    "mutual funds starting with 'u'": [
+      "mutual-funds-starting-with-u"
+    ],
+    "mutual funds starting with 'p'": [
+      "mutual-funds-starting-with-p"
+    ],
+    "sundaram multi cap fund direct growth": [
+      "sundaram-multi-cap-fund-direct-growth"
+    ],
+    "iti banking and psu debt fund direct growth": [
+      "iti-banking-and-psu-debt-fund-direct-growth"
+    ],
+    "hdfc focused fund direct growth": [
+      "hdfc-focused-fund-direct-growth"
+    ],
+    "mutual funds starting with 'o'": [
+      "mutual-funds-starting-with-o"
+    ],
+    "edelweiss equity savings fund direct growth": [
+      "edelweiss-equity-savings-fund-direct-growth"
+    ],
+    "motilal oswal bse quality index fund direct growth": [
+      "motilal-oswal-bse-quality-index-fund-direct-growth"
+    ],
+    "sbi magnum constant maturity fund direct growth": [
+      "sbi-magnum-constant-maturity-fund-direct-growth"
+    ],
+    "hdfc flexi cap direct plan growth": [
+      "hdfc-flexi-cap-direct-plan-growth"
+    ],
+    "groww nifty india railways psu index fund direct growth": [
+      "groww-nifty-india-railways-psu-index-fund-direct-growth"
+    ],
+    "quant mid cap fund direct growth": [
+      "quant-mid-cap-fund-direct-growth"
+    ],
+    "hdfc multi asset fund direct growth": [
+      "hdfc-multi-asset-fund-direct-growth"
+    ],
+    "nippon india banking and psu fund direct growth": [
+      "nippon-india-banking-and-psu-fund-direct-growth"
+    ],
+    "franklin india banking & psu debt fund direct growth": [
+      "franklin-india-banking-and-psu-debt-fund-direct-growth"
+    ],
+    "canara robeco savings fund direct growth": [
+      "canara-robeco-savings-fund-direct-growth"
+    ],
+    "mutual funds starting with \"x\" – groww funds list": [
+      "mutual-funds-starting-with-x--groww-funds-list"
+    ],
+    "motilal oswal elss tax saver fund direct growth": [
+      "motilal-oswal-elss-tax-saver-fund-direct-growth"
+    ],
+    "nippon india overnight fund direct growth": [
+      "nippon-india-overnight-fund-direct-growth"
+    ],
+    "uti gilt fund with 10 year constant duration direct growth": [
+      "uti-gilt-fund-with-10-year-constant-duration-direct-growth"
+    ],
+    "samco mutual fund": [
+      "samco-mutual-fund"
+    ],
+    "capitalmind mutual fund": [
+      "capitalmind-mutual-fund"
+    ],
+    "mutual funds starting with 'k'": [
+      "mutual-funds-starting-with-k"
+    ],
+    "kotak silver etf fof direct growth": [
+      "kotak-silver-etf-fof-direct-growth"
+    ],
+    "bandhan bond fund income plan direct growth": [
+      "bandhan-bond-fund-income-plan-direct-growth"
+    ],
+    "iti mutual fund": [
+      "iti-mutual-fund"
+    ],
+    "dsp bond direct growth": [
+      "dsp-bond-direct-growth"
+    ],
+    "axis gold direct plan growth": [
+      "axis-gold-direct-plan-growth"
+    ],
+    "iti multi cap fund direct growth": [
+      "iti-multi-cap-fund-direct-growth"
+    ],
+    "dsp 10y g sec fund direct growth": [
+      "dsp-10y-g-sec-fund-direct-growth"
+    ],
+    "sundaram money market fund direct growth": [
+      "sundaram-money-market-fund-direct-growth"
+    ],
+    "groww silver etf fof direct growth": [
+      "groww-silver-etf-fof-direct-growth"
+    ],
+    "uti mutual fund": [
+      "uti-mutual-fund"
+    ],
+    "bandhan long duration fund direct growth": [
+      "bandhan-long-duration-fund-direct-growth"
+    ],
+    "hdfc medium term debt fund direct growth": [
+      "hdfc-medium-term-debt-fund-direct-growth"
+    ],
+    "icici prudential regular savings fund direct growth": [
+      "icici-prudential-regular-savings-fund-direct-growth"
+    ],
+    "tata overnight fund direct growth": [
+      "tata-overnight-fund-direct-growth"
+    ],
+    "icici prudential regular gold savings (fof) direct growth": [
+      "icici-prudential-regular-gold-savings-fof-direct-growth"
+    ],
+    "mirae asset low duration fund direct growth": [
+      "mirae-asset-low-duration-fund-direct-growth"
+    ],
+    "bandhan mutual fund": [
+      "bandhan-mutual-fund"
+    ],
+    "uti banking & psu fund direct growth": [
+      "uti-banking-and-psu-fund-direct-growth"
+    ],
+    "motilal oswal bse low volatility index fund direct growth": [
+      "motilal-oswal-bse-low-volatility-index-fund-direct-growth"
+    ],
+    "motilal oswal nifty midcap 150 index fund direct growth": [
+      "motilal-oswal-nifty-midcap-150-index-fund-direct-growth"
+    ],
+    "zerodha mutual funds": [
+      "zerodha-mutual-funds"
+    ],
+    "hdfc large and mid cap fund direct growth": [
+      "hdfc-large-and-mid-cap-fund-direct-growth"
+    ],
+    "pgim india mutual fund": [
+      "pgim-india-mutual-fund"
+    ],
+    "groww nifty smallcap 250 index fund direct growth": [
+      "groww-nifty-smallcap-250-index-fund-direct-growth"
+    ],
+    "groww large cap fund direct growth": [
+      "groww-large-cap-fund-direct-growth"
+    ],
+    "invesco india multicap fund direct growth": [
+      "invesco-india-multicap-fund-direct-growth"
+    ],
+    "axis corporate bond fund direct growth": [
+      "axis-corporate-bond-fund-direct-growth"
+    ],
+    "bandhan large & mid cap fund direct growth": [
+      "bandhan-large-and-mid-cap-fund-direct-growth"
+    ],
+    "hdfc retirement savings fund equity plan direct growth": [
+      "hdfc-retirement-savings-fund-equity-plan-direct-growth"
+    ],
+    "icici prudential long term bond fund direct plan growth": [
+      "icici-prudential-long-term-bond-fund-direct-plan-growth"
+    ],
+    "quant overnight fund direct growth": [
+      "quant-overnight-fund-direct-growth"
+    ],
+    "nippon india nivesh lakshya long duration fund direct growth": [
+      "nippon-india-nivesh-lakshya-long-duration-fund-direct-growth"
+    ],
+    "kotak money market fund direct growth": [
+      "kotak-money-market-fund-direct-growth"
+    ],
+    "icici prudential infrastructure direct growth": [
+      "icici-prudential-infrastructure-direct-growth"
+    ],
+    "kotak low duration fund direct growth": [
+      "kotak-low-duration-fund-direct-growth"
+    ],
+    "bandhan banking and psu fund direct growth": [
+      "bandhan-banking-and-psu-fund-direct-growth"
+    ],
+    "aditya birla sun life income fund direct growth": [
+      "aditya-birla-sun-life-income-fund-direct-growth"
+    ],
+    "edelweiss money market fund direct growth": [
+      "edelweiss-money-market-fund-direct-growth"
+    ],
+    "jm flexicap fund direct plan growth": [
+      "jm-flexicap-fund-direct-plan-growth"
+    ],
+    "groww nifty total market index fund direct growth": [
+      "groww-nifty-total-market-index-fund-direct-growth"
+    ],
+    "aditya birla sun life overnight fund direct growth": [
+      "aditya-birla-sun-life-overnight-fund-direct-growth"
+    ],
+    "bank of india flexi cap fund direct growth": [
+      "bank-of-india-flexi-cap-fund-direct-growth"
+    ],
+    "trustmf liquid fund direct growth": [
+      "trustmf-liquid-fund-direct-growth"
+    ],
+    "aditya birla sun life long duration fund direct growth": [
+      "aditya-birla-sun-life-long-duration-fund-direct-growth"
+    ],
+    "nippon india silver etf fof direct growth": [
+      "nippon-india-silver-etf-fof-direct-growth"
+    ],
+    "mutual funds starting with 'm'": [
+      "mutual-funds-starting-with-m"
+    ],
+    "hdfc multi cap fund direct growth": [
+      "hdfc-multi-cap-fund-direct-growth"
+    ],
+    "dsp silver etf fof direct growth": [
+      "dsp-silver-etf-fof-direct-growth"
+    ],
+    "sbi multicap fund direct growth": [
+      "sbi-multicap-fund-direct-growth"
+    ],
+    "mutual funds starting with 'j'": [
+      "mutual-funds-starting-with-j"
+    ],
+    "debt funds": [
+      "debt-funds"
+    ],
+    "groww liquid fund direct growth": [
+      "groww-liquid-fund-direct-growth"
+    ],
+    "whiteoak capital flexi cap fund direct growth": [
+      "whiteoak-capital-flexi-cap-fund-direct-growth"
+    ],
+    "dsp low duration fund direct growth": [
+      "dsp-low-duration-fund-direct-growth"
+    ],
+    "baroda bnp paribas low duration fund direct growth": [
+      "baroda-bnp-paribas-low-duration-fund-direct-growth"
+    ],
+    "groww mutual fund": [
+      "groww-mutual-fund"
+    ],
+    "helios mutual funds": [
+      "helios-mutual-funds"
+    ],
+    "hdfc mid cap fund direct growth": [
+      "hdfc-mid-cap-fund-direct-growth"
+    ],
+    "icici prudential income plus arbitrage active fof direct growth": [
+      "icici-prudential-income-plus-arbitrage-active-fof-direct-growth"
+    ],
+    "mutual funds starting with 'r'": [
+      "mutual-funds-starting-with-r"
+    ],
+    "choice mutual fund": [
+      "choice-mutual-fund"
+    ],
+    "mahindra manulife focused fund direct growth": [
+      "mahindra-manulife-focused-fund-direct-growth"
+    ],
+    "axis banking & psu debt direct plan growth": [
+      "axis-banking-and-psu-debt-direct-plan-growth"
+    ],
+    "lic mf banking & psu fund direct growth": [
+      "lic-mf-banking-and-psu-fund-direct-growth"
+    ],
+    "unifi mutual fund": [
+      "unifi-mutual-fund"
+    ],
+    "union mutual fund": [
+      "union-mutual-fund"
+    ],
+    "axis long duration fund direct growth": [
+      "axis-long-duration-fund-direct-growth"
+    ],
+    "hdfc income plus arbitrage active fof direct growth": [
+      "hdfc-income-plus-arbitrage-active-fof-direct-growth"
+    ],
+    "mutual funds starting with 'd'": [
+      "mutual-funds-starting-with-d"
+    ],
+    "canara robeco mutual fund": [
+      "canara-robeco-mutual-fund"
+    ],
+    "baroda bnp paribas gilt fund direct growth": [
+      "baroda-bnp-paribas-gilt-fund-direct-growth"
+    ],
+    "sundaram banking & psu fund direct growth": [
+      "sundaram-banking-and-psu-fund-direct-growth"
+    ],
+    "franklin india dynamic asset allocation active fof direct growth": [
+      "franklin-india-dynamic-asset-allocation-active-fof-direct-growth"
+    ],
+    "mutual funds starting with 'q'": [
+      "mutual-funds-starting-with-q"
+    ],
+    "parag parikh flexi cap fund direct growth": [
+      "parag-parikh-flexi-cap-fund-direct-growth"
+    ],
+    "motilal oswal flexi cap fund direct growth": [
+      "motilal-oswal-flexi-cap-fund-direct-growth"
+    ],
+    "dsp large & mid cap fund direct plan growth": [
+      "dsp-large-and-mid-cap-fund-direct-plan-growth"
+    ],
+    "sbi magnum children's benefit fund savings plan direct": [
+      "sbi-magnum-childrens-benefit-fund-savings-plan-direct"
+    ],
+    "motilal oswal midcap fund direct growth": [
+      "motilal-oswal-midcap-fund-direct-growth"
+    ],
+    "nippon india money market fund direct growth": [
+      "nippon-india-money-market-fund-direct-growth"
+    ],
+    "uti silver etf fof direct growth": [
+      "uti-silver-etf-fof-direct-growth"
+    ],
+    "hsbc money market fund direct growth": [
+      "hsbc-money-market-fund-direct-growth"
+    ],
+    "bandhan arbitrage fund direct growth": [
+      "bandhan-arbitrage-fund-direct-growth"
+    ],
+    "tata money market fund direct growth": [
+      "tata-money-market-fund-direct-growth"
+    ],
+    "uti gold etf fof direct growth": [
+      "uti-gold-etf-fof-direct-growth"
+    ],
+    "groww short duration fund direct growth": [
+      "groww-short-duration-fund-direct-growth"
+    ],
+    "bajaj finserv mutual funds": [
+      "bajaj-finserv-mutual-funds"
+    ],
+    "franklin india long duration fund direct growth": [
+      "franklin-india-long-duration-fund-direct-growth"
+    ],
+    "hsbc small cap fund direct growth": [
+      "hsbc-small-cap-fund-direct-growth"
+    ],
+    "compare funds": [
+      "compare-funds"
+    ],
+    "navi mutual fund": [
+      "navi-mutual-fund"
+    ],
+    "trustmf short duration fund direct growth": [
+      "trustmf-short-duration-fund-direct-growth"
+    ],
+    "axis mutual fund": [
+      "axis-mutual-fund"
+    ],
+    "jm low duration fund direct plan growth": [
+      "jm-low-duration-fund-direct-plan-growth"
+    ],
+    "hsbc large and mid cap fund direct growth": [
+      "hsbc-large-and-mid-cap-fund-direct-growth"
+    ],
+    "hsbc low duration fund direct growth": [
+      "hsbc-low-duration-fund-direct-growth"
+    ],
+    "groww gold etf fof direct growth": [
+      "groww-gold-etf-fof-direct-growth"
+    ],
+    "kotak gold fund direct growth": [
+      "kotak-gold-fund-direct-growth"
+    ],
+    "mirae asset long duration fund direct growth": [
+      "mirae-asset-long-duration-fund-direct-growth"
+    ],
+    "motilal oswal bse financials ex bank 30 index fund direct growth": [
+      "motilal-oswal-bse-financials-ex-bank-30-index-fund-direct-growth"
+    ],
+    "nippon india medium to long duration fund direct growth": [
+      "nippon-india-medium-to-long-duration-fund-direct-growth"
+    ],
+    "kotak bond fund direct growth": [
+      "kotak-bond-fund-direct-growth"
+    ],
+    "axis overnight fund direct growth": [
+      "axis-overnight-fund-direct-growth"
+    ],
+    "mutual funds starting with 'e'": [
+      "mutual-funds-starting-with-e"
+    ],
+    "icici prudential silver etf fof direct growth": [
+      "icici-prudential-silver-etf-fof-direct-growth"
+    ],
+    "hdfc silver etf fof direct growth": [
+      "hdfc-silver-etf-fof-direct-growth"
+    ],
+    "mirae asset large & midcap fund direct growth": [
+      "mirae-asset-large-and-midcap-fund-direct-growth"
+    ],
+    "baroda bnp paribas mutual funds": [
+      "baroda-bnp-paribas-mutual-funds"
+    ],
+    "invesco india medium duration fund direct growth": [
+      "invesco-india-medium-duration-fund-direct-growth"
+    ],
+    "mutual funds starting with 'l'": [
+      "mutual-funds-starting-with-l"
+    ],
+    "hdfc low duration fund direct growth": [
+      "hdfc-low-duration-fund-direct-growth"
+    ],
+    "the wealth company mutual fund": [
+      "the-wealth-company-mutual-fund"
+    ],
+    "jm financial mutual fund": [
+      "jm-financial-mutual-fund"
+    ],
+    "motilal oswal nifty 500 index fund direct growth": [
+      "motilal-oswal-nifty-500-index-fund-direct-growth"
+    ],
+    "icici prudential flexicap fund direct growth": [
+      "icici-prudential-flexicap-fund-direct-growth"
+    ],
+    "dsp gold etf fof direct growth": [
+      "dsp-gold-etf-fof-direct-growth"
+    ],
+    "bank of india mutual fund": [
+      "bank-of-india-mutual-fund"
+    ],
+    "the wealth company flexi cap fund direct growth": [
+      "the-wealth-company-flexi-cap-fund-direct-growth"
+    ],
+    "hdfc multi asset active fof direct growth": [
+      "hdfc-multi-asset-active-fof-direct-growth"
+    ],
+    "360 one mutual fund": [
+      "360-one-mutual-fund"
+    ],
+    "tata small cap fund direct growth": [
+      "tata-small-cap-fund-direct-growth"
+    ],
+    "sbi savings fund direct growth": [
+      "sbi-savings-fund-direct-growth"
+    ],
+    "icici prudential corporate bond fund direct plan growth": [
+      "icici-prudential-corporate-bond-fund-direct-plan-growth"
+    ],
+    "axis treasury advantage fund direct growth": [
+      "axis-treasury-advantage-fund-direct-growth"
+    ],
+    "nippon india vision large & mid cap direct growth": [
+      "nippon-india-vision-large-and-mid-cap-direct-growth"
+    ],
+    "invesco india gold etf fof direct growth": [
+      "invesco-india-gold-etf-fof-direct-growth"
+    ],
+    "icici prudential mutual fund": [
+      "icici-prudential-mutual-fund"
+    ],
+    "sbi small cap fund direct growth": [
+      "sbi-small-cap-fund-direct-growth"
+    ],
+    "aditya birla sun life mutual fund": [
+      "aditya-birla-sun-life-mutual-fund"
+    ],
+    "zerodha silver etf fof direct growth": [
+      "zerodha-silver-etf-fof-direct-growth"
+    ],
+    "kotak overnight fund direct growth": [
+      "kotak-overnight-fund-direct-growth"
+    ],
+    "icici prudential short term fund direct plan growth": [
+      "icici-prudential-short-term-fund-direct-plan-growth"
+    ],
+    "motilal oswal bse enhanced value index fund direct growth": [
+      "motilal-oswal-bse-enhanced-value-index-fund-direct-growth"
+    ],
+    "bandhan nifty alpha 50 index fund direct growth": [
+      "bandhan-nifty-alpha-50-index-fund-direct-growth"
+    ],
+    "mutual funds starting with 'h'": [
+      "mutual-funds-starting-with-h"
+    ],
+    "bandhan multi cap fund direct growth": [
+      "bandhan-multi-cap-fund-direct-growth"
+    ],
+    "nippon india mutual fund": [
+      "nippon-india-mutual-fund"
+    ],
+    "nippon india low duration fund direct growth": [
+      "nippon-india-low-duration-fund-direct-growth"
+    ],
+    "edelweiss nifty large mid cap 250 index fund direct growth": [
+      "edelweiss-nifty-large-mid-cap-250-index-fund-direct-growth"
+    ],
+    "best moderate risk mutual funds": [
+      "best-moderate-risk-mutual-funds"
+    ],
+    "mutual funds starting with 'c'": [
+      "mutual-funds-starting-with-c"
+    ],
+    "canara robeco small cap fund direct growth": [
+      "canara-robeco-small-cap-fund-direct-growth"
+    ],
+    "best long duration mutual funds": [
+      "best-long-duration-mutual-funds"
+    ],
+    "mutual funds starting with 'w'": [
+      "mutual-funds-starting-with-w"
+    ],
+    "groww multicap fund direct growth": [
+      "groww-multicap-fund-direct-growth"
+    ],
+    "sbi gold direct plan growth": [
+      "sbi-gold-direct-plan-growth"
+    ],
+    "icici prudential multicap fund direct plan growth": [
+      "icici-prudential-multicap-fund-direct-plan-growth"
+    ],
+    "groww nifty 200 etf fof direct growth": [
+      "groww-nifty-200-etf-fof-direct-growth"
+    ],
+    "sbi magnum income direct plan growth": [
+      "sbi-magnum-income-direct-plan-growth"
+    ],
+    "icici prudential focused equity fund direct growth": [
+      "icici-prudential-focused-equity-fund-direct-growth"
+    ],
+    "hdfc small cap fund direct growth": [
+      "hdfc-small-cap-fund-direct-growth"
+    ],
+    "taurus mutual fund": [
+      "taurus-mutual-fund"
+    ],
+    "groww elss tax saver fund direct growth": [
+      "groww-elss-tax-saver-fund-direct-growth"
+    ],
+    "hsbc medium duration fund direct growth": [
+      "hsbc-medium-duration-fund-direct-growth"
+    ],
+    "icici prudential india opportunities fund direct growth": [
+      "icici-prudential-india-opportunities-fund-direct-growth"
+    ],
+    "groww nifty ev & new age automotive etf fof direct growth": [
+      "groww-nifty-ev-and-new-age-automotive-etf-fof-direct-growth"
+    ],
+    "aditya birla sun life medium term plan direct growth": [
+      "aditya-birla-sun-life-medium-term-plan-direct-growth"
+    ],
+    "bank of india overnight fund direct growth": [
+      "bank-of-india-overnight-fund-direct-growth"
+    ],
+    "hdfc short term debt fund direct plan growth": [
+      "hdfc-short-term-debt-fund-direct-plan-growth"
+    ],
+    "uti multi cap fund direct growth": [
+      "uti-multi-cap-fund-direct-growth"
+    ],
+    "mutual funds starting with 'f'": [
+      "mutual-funds-starting-with-f"
+    ],
+    "invest in direct mutual funds.": [
+      "invest-in-direct-mutual-funds"
+    ],
+    "the wealth company arbitrage fund direct growth": [
+      "the-wealth-company-arbitrage-fund-direct-growth"
+    ],
+    "kotak arbitrage fund direct growth": [
+      "kotak-arbitrage-fund-direct-growth"
+    ],
+    "sbi banking and psu fund direct growth": [
+      "sbi-banking-and-psu-fund-direct-growth"
+    ],
+    "tata silver etf fof direct growth": [
+      "tata-silver-etf-fof-direct-growth"
+    ],
+    "mahindra manulife mutual fund": [
+      "mahindra-manulife-mutual-fund"
+    ],
+    "kotak mutual fund": [
+      "kotak-mutual-fund"
+    ],
+    "sundaram low duration fund direct growth": [
+      "sundaram-low-duration-fund-direct-growth"
+    ],
+    "kotak long duration fund direct growth": [
+      "kotak-long-duration-fund-direct-growth"
+    ],
+    "kotak large & midcap fund direct growth": [
+      "kotak-large-and-midcap-fund-direct-growth"
+    ],
+    "nippon india medium duration fund direct growth": [
+      "nippon-india-medium-duration-fund-direct-growth"
+    ],
+    "aditya birla sun life silver etf fof direct growth": [
+      "aditya-birla-sun-life-silver-etf-fof-direct-growth"
+    ],
+    "hsbc medium to long duration fund direct growth": [
+      "hsbc-medium-to-long-duration-fund-direct-growth"
+    ],
+    "icici prudential medium term bond fund direct plan growth": [
+      "icici-prudential-medium-term-bond-fund-direct-plan-growth"
+    ],
+    "trust mutual funds": [
+      "trust-mutual-funds"
+    ],
+    "kotak medium term fund direct growth": [
+      "kotak-medium-term-fund-direct-growth"
+    ],
+    "hdfc mutual fund": [
+      "hdfc-mutual-fund"
+    ],
+    "axis midcap direct plan growth": [
+      "axis-midcap-direct-plan-growth"
+    ],
+    "uti medium duration fund direct growth": [
+      "uti-medium-duration-fund-direct-growth"
+    ],
+    "lic mf gold etf fof direct growth": [
+      "lic-mf-gold-etf-fof-direct-growth"
+    ],
+    "tata ethical direct plan growth": [
+      "tata-ethical-direct-plan-growth"
+    ],
+    "axis large & mid cap fund direct growth": [
+      "axis-large-and-mid-cap-fund-direct-growth"
+    ]
+  },
+  "categories": {
+    "Equity": [
+      "axis-small-cap-fund-direct-growth",
+      "icici-prudential-debt-management-fund-fof-direct-plan-growth",
+      "invesco-india-arbitrage-fund-direct-growth",
+      "mutual-funds-starting-with-n",
+      "hdfc-gold-etf-fund-of-fund-direct-plan-growth",
+      "motilal-oswal-asset-allocation-passive-fof-conservative-direct-growth",
+      "quant-multi-cap-fund-direct-growth",
+      "trustmf-overnight-fund-direct-growth",
+      "asset-management-company-amc",
+      "aditya-birla-sun-life-money-manager-fund-direct-growth",
+      "lic-mf-overnight-fund-direct-growth",
+      "all-mutual-funds",
+      "ppfas-mutual-fund",
+      "baroda-bnp-paribas-overnight-fund-direct-growth",
+      "franklin-india-multi-cap-fund-direct-growth",
+      "invesco-mutual-fund",
+      "sbi-magnum-medium-duration-fund-direct-growth",
+      "sbi-silver-etf-fof-direct-growth",
+      "franklin-india-medium-to-long-duration-fund-direct-growth",
+      "sundaram-medium-duration-fund-direct-growth",
+      "bank-of-india-small-cap-fund-direct-growth",
+      "mirae-asset-elss-tax-saver-fund-direct-growth",
+      "axis-multicap-fund-direct-growth",
+      "sbi-magnum-low-duration-fund-direct-plan-growth",
+      "groww-nifty-non-cyclical-consumer-index-fund-direct-growth",
+      "baroda-bnp-paribas-multi-cap-fund-direct-growth",
+      "uti-overnight-fund-direct-growth",
+      "edelweiss-large-and-mid-cap-direct-plan-growth",
+      "icici-prudential-gilt-fund-direct-plan-growth",
+      "nippon-india-multi-cap-fund-direct-growth",
+      "quantum-gold-savings-fund-direct-growth",
+      "quant-infrastructure-fund-direct-growth",
+      "uti-money-market-fund-direct-growth",
+      "aditya-birla-sun-life-arbitrage-fund-direct-growth",
+      "icici-prudential-retirement-fund-pure-equity-plan-direct-growth",
+      "shriram-mutual-fund",
+      "mutual-funds-starting-with-v--groww-funds-list",
+      "icici-prudential-money-market-direct-growth",
+      "jm-medium-to-long-duration-fund-direct-growth",
+      "bandhan-bond-fund-medium-term-plan-direct-growth",
+      "icici-prudential-large-and-mid-cap-fund-direct-plan-growth",
+      "nippon-india-conservative-hybrid-fund-direct-growth",
+      "motilal-oswal-gold-and-silver-etfs-fof-direct-growth",
+      "uti-large-and-mid-cap-fund-direct-growth",
+      "hdfc-income-fund-direct-growth",
+      "mutual-funds-starting-with-t",
+      "mutual-funds-starting-with-g",
+      "all-mutual-funds",
+      "mutual-funds-starting-with-s",
+      "icici-prudential-constant-maturity-gilt-fund-direct-growth",
+      "hsbc-overnight-fund-direct-growth",
+      "groww-aggressive-hybrid-fund-direct-growth",
+      "motilal-oswal-large-and-midcap-fund-direct-growth",
+      "sbi-mutual-fund",
+      "groww-arbitrage-fund-direct-growth",
+      "aditya-birla-sun-life-gold-fund-direct-growth",
+      "capitalmind-flexi-cap-fund-direct-growth",
+      "best-high-risk-mutual-funds",
+      "hdfc-balanced-advantage-fund-direct-growth",
+      "aditya-birla-sun-life-multi-cap-fund-direct-growth",
+      "dsp-mutual-fund",
+      "hdfc-long-duration-debt-fund-direct-growth",
+      "mirae-asset-money-market-fund-direct-growth",
+      "lic-mf-low-duration-fund-direct-growth",
+      "uti-medium-to-long-duration-fund-direct-growth",
+      "the-wealth-company-ethical-fund-direct-growth",
+      "invesco-india-large-and-mid-cap-fund-direct-growth",
+      "baroda-bnp-paribas-large-and-mid-cap-fund-direct-growth",
+      "edelweiss-mutual-fund",
+      "quant-small-cap-fund-direct-plan-growth",
+      "hsbc-banking-and-psu-debt-fund-direct-growth",
+      "mutual-funds-starting-with-i",
+      "hsbc-mutual-fund",
+      "mutual-funds---others",
+      "sundaram-mutual-fund",
+      "groww-banking-and-financial-services-fund-direct-growth",
+      "edelweiss-gold-and-silver-etf-fof-direct-growth",
+      "mahindra-manulife-low-duration-fund-direct-growth",
+      "best-low-risk-mutual-funds",
+      "tata-treasury-advantage-direct-plan-growth",
+      "kotak-multicap-fund-direct-growth",
+      "whiteoak-mutual-funds",
+      "mirae-asset-mutual-fund",
+      "tata-arbitrage-fund-direct-growth",
+      "mahindra-manulife-multi-cap-fund-direct-growth",
+      "list-of-all-mutual-funds-categories",
+      "invesco-india-focused-fund-direct-growth",
+      "bandhan-overnight-fund-direct-growth",
+      "mirae-asset-overnight-fund-direct-growth",
+      "all-mutual-funds",
+      "all-mutual-funds",
+      "dsp-overnight-fund-direct-growth",
+      "jio-blackrock-mutual-fund",
+      "sbi-large-and-midcap-fund-direct-plan-growth",
+      "groww-overnight-fund-direct-growth",
+      "motilal-oswal-asset-allocation-passive-fof-aggressive-direct-growth",
+      "sbi-equity-hybrid-fund-direct-plan-growth",
+      "nippon-india-nifty-500-momentum-50-index-fund-direct-growth",
+      "franklin-india-money-market-fund-direct-growth",
+      "all-mutual-funds",
+      "icici-prudential-bond-fund-direct-plan-growth",
+      "kotak-banking-and-psu-debt-fund-direct-growth",
+      "aditya-birla-sun-life-banking-and-psu-debt-fund-direct-growth",
+      "icici-prudential-bharat-consumption-fund-direct-growth",
+      "sbi-long-duration-fund-direct-growth",
+      "kotak-midcap-fund-direct-growth",
+      "tata-mutual-fund",
+      "mutual-funds-starting-with-a",
+      "hdfc-banking-and-psu-debt-fund-direct-growth",
+      "motilal-oswal-5-year-g-sec-fof-direct-growth",
+      "uti-nifty-50-index-fund-direct-growth",
+      "groww-nifty-india-defence-etf-fof-direct-growth",
+      "franklin-templeton-mutual-fund",
+      "union-overnight-fund-direct-growth",
+      "mutual-funds-starting-with-b",
+      "axis-elss-tax-saver-direct-plan-growth",
+      "motilal-oswal-nifty-india-defence-index-fund-direct-growth",
+      "icici-prudential-banking-and-psu-debt-direct-growth",
+      "groww-dynamic-bond-fund-direct-growth",
+      "sbi-contra-direct-plan-growth",
+      "uti-long-duration-fund-direct-growth",
+      "quantum-mutual-fund",
+      "axis-money-market-fund-direct-growth",
+      "mutual-funds-starting-with-y--groww-funds-list",
+      "icici-prudential-india-equity-fof-direct-growth",
+      "lic-mutual-fund",
+      "all-mutual-funds",
+      "motilal-oswal-nifty-50-index-fund-direct-growth",
+      "quant-multi-asset-allocation-fund-direct-growth",
+      "all-mutual-funds",
+      "all-mutual-funds",
+      "axis-strategic-bond-fund-direct-growth",
+      "motilal-oswal-mutual-fund",
+      "icici-prudential-equity-arbitrage-direct-growth",
+      "all-mutual-funds",
+      "bandhan-money-market-fund-direct-growth",
+      "nippon-india-gold-savings-fund-direct-growth",
+      "mutual-funds-starting-with-z",
+      "nippon-india-small-cap-fund-direct-growth",
+      "all-mutual-funds",
+      "canara-robeco-income-direct-growth",
+      "groww-value-fund-direct-growth",
+      "sbi-arbitrage-opportunities-fund-direct-growth",
+      "canara-robeco-large-cap-fund-direct-growth",
+      "trustmf-banking-and-psu-fund-direct-growth",
+      "axis-silver-fof-direct-growth",
+      "kotak-small-cap-fund-direct-growth",
+      "all-mutual-funds",
+      "hdfc-money-market-fund-direct-growth",
+      "invesco-india-flexi-cap-fund-direct-growth",
+      "bandhan-government-securities-fund-constant-maturity-direct-growth",
+      "lic-mf-medium-to-long-duration-fund-direct-growth",
+      "nj-mutual-funds",
+      "quant-mutual-fund",
+      "tata-gold-etf-fof-direct-growth",
+      "the-wealth-company-liquid-fund-direct-growth",
+      "all-mutual-funds",
+      "mutual-funds-starting-with-u",
+      "mutual-funds-starting-with-p",
+      "sundaram-multi-cap-fund-direct-growth",
+      "iti-banking-and-psu-debt-fund-direct-growth",
+      "hdfc-focused-fund-direct-growth",
+      "mutual-funds-starting-with-o",
+      "edelweiss-equity-savings-fund-direct-growth",
+      "motilal-oswal-bse-quality-index-fund-direct-growth",
+      "sbi-magnum-constant-maturity-fund-direct-growth",
+      "hdfc-flexi-cap-direct-plan-growth",
+      "groww-nifty-india-railways-psu-index-fund-direct-growth",
+      "quant-mid-cap-fund-direct-growth",
+      "all-mutual-funds",
+      "hdfc-multi-asset-fund-direct-growth",
+      "nippon-india-banking-and-psu-fund-direct-growth",
+      "franklin-india-banking-and-psu-debt-fund-direct-growth",
+      "canara-robeco-savings-fund-direct-growth",
+      "mutual-funds-starting-with-x--groww-funds-list",
+      "all-mutual-funds",
+      "motilal-oswal-elss-tax-saver-fund-direct-growth",
+      "all-mutual-funds",
+      "nippon-india-overnight-fund-direct-growth",
+      "uti-gilt-fund-with-10-year-constant-duration-direct-growth",
+      "samco-mutual-fund",
+      "capitalmind-mutual-fund",
+      "mutual-funds-starting-with-k",
+      "kotak-silver-etf-fof-direct-growth",
+      "bandhan-bond-fund-income-plan-direct-growth",
+      "iti-mutual-fund",
+      "dsp-bond-direct-growth",
+      "axis-gold-direct-plan-growth",
+      "iti-multi-cap-fund-direct-growth",
+      "dsp-10y-g-sec-fund-direct-growth",
+      "sundaram-money-market-fund-direct-growth",
+      "groww-silver-etf-fof-direct-growth",
+      "uti-mutual-fund",
+      "bandhan-long-duration-fund-direct-growth",
+      "hdfc-medium-term-debt-fund-direct-growth",
+      "icici-prudential-regular-savings-fund-direct-growth",
+      "tata-overnight-fund-direct-growth",
+      "icici-prudential-regular-gold-savings-fof-direct-growth",
+      "mirae-asset-low-duration-fund-direct-growth",
+      "bandhan-mutual-fund",
+      "uti-banking-and-psu-fund-direct-growth",
+      "motilal-oswal-bse-low-volatility-index-fund-direct-growth",
+      "motilal-oswal-nifty-midcap-150-index-fund-direct-growth",
+      "all-mutual-funds",
+      "zerodha-mutual-funds",
+      "hdfc-large-and-mid-cap-fund-direct-growth",
+      "pgim-india-mutual-fund",
+      "groww-nifty-smallcap-250-index-fund-direct-growth",
+      "groww-large-cap-fund-direct-growth",
+      "invesco-india-multicap-fund-direct-growth",
+      "axis-corporate-bond-fund-direct-growth",
+      "bandhan-large-and-mid-cap-fund-direct-growth",
+      "hdfc-retirement-savings-fund-equity-plan-direct-growth",
+      "icici-prudential-long-term-bond-fund-direct-plan-growth",
+      "all-mutual-funds",
+      "quant-overnight-fund-direct-growth",
+      "nippon-india-nivesh-lakshya-long-duration-fund-direct-growth",
+      "kotak-money-market-fund-direct-growth",
+      "icici-prudential-infrastructure-direct-growth",
+      "kotak-low-duration-fund-direct-growth",
+      "bandhan-banking-and-psu-fund-direct-growth",
+      "aditya-birla-sun-life-income-fund-direct-growth",
+      "edelweiss-money-market-fund-direct-growth",
+      "jm-flexicap-fund-direct-plan-growth",
+      "groww-nifty-total-market-index-fund-direct-growth",
+      "aditya-birla-sun-life-overnight-fund-direct-growth",
+      "bank-of-india-flexi-cap-fund-direct-growth",
+      "trustmf-liquid-fund-direct-growth",
+      "aditya-birla-sun-life-long-duration-fund-direct-growth",
+      "nippon-india-silver-etf-fof-direct-growth",
+      "mutual-funds-starting-with-m",
+      "hdfc-multi-cap-fund-direct-growth",
+      "dsp-silver-etf-fof-direct-growth",
+      "sbi-multicap-fund-direct-growth",
+      "mutual-funds-starting-with-j",
+      "debt-funds",
+      "groww-liquid-fund-direct-growth",
+      "whiteoak-capital-flexi-cap-fund-direct-growth",
+      "dsp-low-duration-fund-direct-growth",
+      "baroda-bnp-paribas-low-duration-fund-direct-growth",
+      "groww-mutual-fund",
+      "helios-mutual-funds",
+      "hdfc-mid-cap-fund-direct-growth",
+      "icici-prudential-income-plus-arbitrage-active-fof-direct-growth",
+      "mutual-funds-starting-with-r",
+      "choice-mutual-fund",
+      "mahindra-manulife-focused-fund-direct-growth",
+      "axis-banking-and-psu-debt-direct-plan-growth",
+      "lic-mf-banking-and-psu-fund-direct-growth",
+      "unifi-mutual-fund",
+      "union-mutual-fund",
+      "axis-long-duration-fund-direct-growth",
+      "hdfc-income-plus-arbitrage-active-fof-direct-growth",
+      "mutual-funds-starting-with-d",
+      "canara-robeco-mutual-fund",
+      "baroda-bnp-paribas-gilt-fund-direct-growth",
+      "sundaram-banking-and-psu-fund-direct-growth",
+      "franklin-india-dynamic-asset-allocation-active-fof-direct-growth",
+      "mutual-funds-starting-with-q",
+      "parag-parikh-flexi-cap-fund-direct-growth",
+      "motilal-oswal-flexi-cap-fund-direct-growth",
+      "dsp-large-and-mid-cap-fund-direct-plan-growth",
+      "all-mutual-funds",
+      "sbi-magnum-childrens-benefit-fund-savings-plan-direct",
+      "motilal-oswal-midcap-fund-direct-growth",
+      "nippon-india-money-market-fund-direct-growth",
+      "uti-silver-etf-fof-direct-growth",
+      "hsbc-money-market-fund-direct-growth",
+      "bandhan-arbitrage-fund-direct-growth",
+      "tata-money-market-fund-direct-growth",
+      "uti-gold-etf-fof-direct-growth",
+      "groww-short-duration-fund-direct-growth",
+      "bajaj-finserv-mutual-funds",
+      "franklin-india-long-duration-fund-direct-growth",
+      "hsbc-small-cap-fund-direct-growth",
+      "compare-funds",
+      "navi-mutual-fund",
+      "trustmf-short-duration-fund-direct-growth",
+      "all-mutual-funds",
+      "axis-mutual-fund",
+      "jm-low-duration-fund-direct-plan-growth",
+      "hsbc-large-and-mid-cap-fund-direct-growth",
+      "hsbc-low-duration-fund-direct-growth",
+      "groww-gold-etf-fof-direct-growth",
+      "kotak-gold-fund-direct-growth",
+      "mirae-asset-long-duration-fund-direct-growth",
+      "motilal-oswal-bse-financials-ex-bank-30-index-fund-direct-growth",
+      "nippon-india-medium-to-long-duration-fund-direct-growth",
+      "kotak-bond-fund-direct-growth",
+      "axis-overnight-fund-direct-growth",
+      "mutual-funds-starting-with-e",
+      "icici-prudential-silver-etf-fof-direct-growth",
+      "hdfc-silver-etf-fof-direct-growth",
+      "mirae-asset-large-and-midcap-fund-direct-growth",
+      "baroda-bnp-paribas-mutual-funds",
+      "invesco-india-medium-duration-fund-direct-growth",
+      "mutual-funds-starting-with-l",
+      "hdfc-low-duration-fund-direct-growth",
+      "the-wealth-company-mutual-fund",
+      "jm-financial-mutual-fund",
+      "motilal-oswal-nifty-500-index-fund-direct-growth",
+      "icici-prudential-flexicap-fund-direct-growth",
+      "dsp-gold-etf-fof-direct-growth",
+      "bank-of-india-mutual-fund",
+      "the-wealth-company-flexi-cap-fund-direct-growth",
+      "hdfc-multi-asset-active-fof-direct-growth",
+      "360-one-mutual-fund",
+      "tata-small-cap-fund-direct-growth",
+      "sbi-savings-fund-direct-growth",
+      "icici-prudential-corporate-bond-fund-direct-plan-growth",
+      "axis-treasury-advantage-fund-direct-growth",
+      "nippon-india-vision-large-and-mid-cap-direct-growth",
+      "invesco-india-gold-etf-fof-direct-growth",
+      "all-mutual-funds",
+      "icici-prudential-mutual-fund",
+      "sbi-small-cap-fund-direct-growth",
+      "aditya-birla-sun-life-mutual-fund",
+      "zerodha-silver-etf-fof-direct-growth",
+      "all-mutual-funds",
+      "hdfc-balanced-advantage-fund-direct-growth",
+      "kotak-overnight-fund-direct-growth",
+      "icici-prudential-short-term-fund-direct-plan-growth",
+      "motilal-oswal-bse-enhanced-value-index-fund-direct-growth",
+      "bandhan-nifty-alpha-50-index-fund-direct-growth",
+      "mutual-funds-starting-with-h",
+      "bandhan-multi-cap-fund-direct-growth",
+      "nippon-india-mutual-fund",
+      "nippon-india-low-duration-fund-direct-growth",
+      "edelweiss-nifty-large-mid-cap-250-index-fund-direct-growth",
+      "best-moderate-risk-mutual-funds",
+      "mutual-funds-starting-with-c",
+      "canara-robeco-small-cap-fund-direct-growth",
+      "best-long-duration-mutual-funds",
+      "mutual-funds-starting-with-w",
+      "groww-multicap-fund-direct-growth",
+      "sbi-gold-direct-plan-growth",
+      "icici-prudential-multicap-fund-direct-plan-growth",
+      "groww-nifty-200-etf-fof-direct-growth",
+      "sbi-magnum-income-direct-plan-growth",
+      "icici-prudential-focused-equity-fund-direct-growth",
+      "hdfc-small-cap-fund-direct-growth",
+      "taurus-mutual-fund",
+      "groww-elss-tax-saver-fund-direct-growth",
+      "hsbc-medium-duration-fund-direct-growth",
+      "icici-prudential-india-opportunities-fund-direct-growth",
+      "groww-nifty-ev-and-new-age-automotive-etf-fof-direct-growth",
+      "aditya-birla-sun-life-medium-term-plan-direct-growth",
+      "bank-of-india-overnight-fund-direct-growth",
+      "hdfc-short-term-debt-fund-direct-plan-growth",
+      "uti-multi-cap-fund-direct-growth",
+      "mutual-funds-starting-with-f",
+      "invest-in-direct-mutual-funds",
+      "the-wealth-company-arbitrage-fund-direct-growth",
+      "kotak-arbitrage-fund-direct-growth",
+      "sbi-banking-and-psu-fund-direct-growth",
+      "tata-silver-etf-fof-direct-growth",
+      "mahindra-manulife-mutual-fund",
+      "kotak-mutual-fund",
+      "sundaram-low-duration-fund-direct-growth",
+      "kotak-long-duration-fund-direct-growth",
+      "kotak-large-and-midcap-fund-direct-growth",
+      "nippon-india-medium-duration-fund-direct-growth",
+      "aditya-birla-sun-life-silver-etf-fof-direct-growth",
+      "hsbc-medium-to-long-duration-fund-direct-growth",
+      "icici-prudential-medium-term-bond-fund-direct-plan-growth",
+      "trust-mutual-funds",
+      "kotak-medium-term-fund-direct-growth",
+      "hdfc-mutual-fund",
+      "axis-midcap-direct-plan-growth",
+      "uti-medium-duration-fund-direct-growth",
+      "lic-mf-gold-etf-fof-direct-growth",
+      "tata-ethical-direct-plan-growth",
+      "axis-large-and-mid-cap-fund-direct-growth"
+    ]
+  },
+  "amcs": {}
+}

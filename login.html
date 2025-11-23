@@ -306,6 +306,99 @@
             box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
         }
 
+        .google-button {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .google-button:hover {
+            border-color: #4285f4;
+            background: #f8f9ff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(66, 133, 244, 0.2);
+        }
+
+        .google-icon {
+            width: 20px;
+            height: 20px;
+            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNjQgOS4yMDRjMC0uNjM4LS4wNTctMS4yNTItLjE2NC0xLjg0MUg5djMuNDk3aDQuODQ0Yy0uMjA5IDEuMTI1LS44NDEgMi4wNzctMS43OTYgMi44NzZ2Mi4yMTZoMi45MDhjMS43MDItMS42NzggMi42ODQtNC4xMzYgMi42ODQtNy4wMzZ6IiBmaWxsPSIjNDI4NUY0Ii8+PHBhdGggZD0iTTkgMThjMi40MyAwIDQuNDY3LS44MDYgNS45NTgtMi4xNjVsLTIuOTA4LTIuMjE2Yy0uODA2LjU0LTEuODM2Ljg1OS0zLjA1Ljg1OS0yLjM0NiAwLTQuMzMyLTEuNTg2LTUuMDM2LTMuNzExS45ODJ2Mi4yNzlDMS40NjcgMTYuNDY3IDQuOTQyIDE4IDkgMTh6IiBmaWxsPSIjMzRBODUzIi8+PHBhdGggZD0iTTMuOTY0IDEwLjcxNUMzLjc5IDEwLjE3IDMuNjkyIDkuNjA2IDMuNjkyIDljMC0uNjA2LjEtMS4xNy4yNzItMS43MTVIMC45ODJWMTEuNGMxLjA1NCAyLjA5IDMuMjg2IDMuNTQzIDUuOTM2IDMuNTQzLjE3IDAgLjM0LS4wMTIuNTA0LS4wMzV6IiBmaWxsPSIjRkJCQzA0Ii8+PHBhdGggZD0iTTkgMy41ODJjMS4zMjEgMCAyLjUwOC40NTQgMy40NDEgMS4zM0wxNC44MiAyLjEwNkMxMy4zMTguNzQ3IDExLjI3IDAgOSAwIDUuOTQyIDAgMi40NjcgMS41MzMgLjk4MiAzLjcyM1Y2LjI4NUgzLjk2NEM0LjY2OCA0LjE0MiA2LjY1NCAzLjU4MiA5IDMuNTgyeiIgZmlsbD0iI0VBNDMzNSIvPjwvZz48L3N2Zz4=') no-repeat center;
+            background-size: contain;
+        }
+
+        .code-display {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border: 2px dashed #667eea;
+            display: none;
+        }
+
+        .code-display.show {
+            display: block;
+            animation: slideDown 0.3s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .code-label {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .code-value {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #333;
+            word-break: break-all;
+            background: white;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .copy-button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .copy-button:hover {
+            background: #5568d3;
+            transform: translateY(-1px);
+        }
+
         .signup-link {
             text-align: center;
             margin-top: 25px;
@@ -359,15 +452,210 @@
         <div class="divider">or continue with</div>
 
         <div class="social-login">
-            <button type="button" class="social-button" title="Google">G</button>
             <button type="button" class="social-button" title="Facebook">f</button>
             <button type="button" class="social-button" title="Twitter">𝕏</button>
+        </div>
+
+        <button type="button" id="google-signin-button" class="google-button">
+            <span class="google-icon"></span>
+            <span>Sign in with Google</span>
+        </button>
+
+        <div id="code-display" class="code-display">
+            <div class="code-label">Authorization Code:</div>
+            <div id="code-value" class="code-value"></div>
+            <button type="button" id="copy-button" class="copy-button">Copy Code</button>
         </div>
 
         <div class="signup-link">
             Don't have an account? <a href="#">Sign up</a>
         </div>
     </div>
+
+    <!-- Google OAuth 2.0 Script -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    
+    <script>
+        // Google OAuth Configuration
+        // Replace with your actual Client ID from Google Cloud Console
+        const GOOGLE_CLIENT_ID = 'YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com';
+        
+        // OAuth 2.0 Configuration
+        const GOOGLE_OAUTH_CONFIG = {
+            client_id: GOOGLE_CLIENT_ID,
+            scope: 'openid email profile',
+            response_type: 'code',
+            redirect_uri: window.location.origin + window.location.pathname,
+            state: generateState()
+        };
+
+        // Generate a random state for security
+        function generateState() {
+            return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+        }
+
+        // Initialize Google OAuth when page loads
+        window.onload = function() {
+            if (GOOGLE_CLIENT_ID !== 'YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com') {
+                initializeGoogleSignIn();
+            } else {
+                console.warn('Please configure your Google Client ID in the script section');
+                document.getElementById('google-signin-button').addEventListener('click', function() {
+                    alert('Please configure your Google Client ID first!\n\n1. Go to https://console.cloud.google.com/\n2. Create OAuth 2.0 credentials\n3. Replace YOUR_GOOGLE_CLIENT_ID in the script');
+                });
+            }
+
+            // Check if we're returning from OAuth callback
+            handleOAuthCallback();
+        };
+
+        function initializeGoogleSignIn() {
+            // Initialize Google Sign-In
+            google.accounts.id.initialize({
+                client_id: GOOGLE_CLIENT_ID,
+                callback: handleCredentialResponse
+            });
+
+            // Set up button click handler for authorization code flow
+            document.getElementById('google-signin-button').addEventListener('click', function() {
+                initiateOAuthFlow();
+            });
+        }
+
+        // Handle credential response (for ID token flow)
+        function handleCredentialResponse(response) {
+            console.log('Credential response:', response);
+            // This is for ID token flow, but we'll use authorization code flow instead
+        }
+
+        // Initiate OAuth 2.0 Authorization Code Flow
+        function initiateOAuthFlow() {
+            const params = new URLSearchParams({
+                client_id: GOOGLE_CLIENT_ID,
+                redirect_uri: GOOGLE_OAUTH_CONFIG.redirect_uri,
+                response_type: 'code',
+                scope: GOOGLE_OAUTH_CONFIG.scope,
+                state: GOOGLE_OAUTH_CONFIG.state,
+                access_type: 'offline',
+                prompt: 'consent'
+            });
+
+            // Store state in sessionStorage for verification
+            sessionStorage.setItem('oauth_state', GOOGLE_OAUTH_CONFIG.state);
+
+            // Redirect to Google OAuth consent screen
+            const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?${params.toString()}`;
+            window.location.href = authUrl;
+        }
+
+        // Handle OAuth callback when returning from Google
+        function handleOAuthCallback() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const code = urlParams.get('code');
+            const state = urlParams.get('state');
+            const error = urlParams.get('error');
+
+            if (error) {
+                console.error('OAuth error:', error);
+                alert('Authentication failed: ' + error);
+                // Clean up URL
+                window.history.replaceState({}, document.title, window.location.pathname);
+                return;
+            }
+
+            if (code && state) {
+                // Verify state to prevent CSRF attacks
+                const storedState = sessionStorage.getItem('oauth_state');
+                if (state !== storedState) {
+                    console.error('State mismatch - possible CSRF attack');
+                    alert('Security error: State mismatch');
+                    window.history.replaceState({}, document.title, window.location.pathname);
+                    return;
+                }
+
+                // Display the authorization code
+                displayAuthorizationCode(code);
+
+                // Clean up URL and state
+                window.history.replaceState({}, document.title, window.location.pathname);
+                sessionStorage.removeItem('oauth_state');
+            }
+        }
+
+        // Display the authorization code
+        function displayAuthorizationCode(code) {
+            const codeDisplay = document.getElementById('code-display');
+            const codeValue = document.getElementById('code-value');
+            
+            codeValue.textContent = code;
+            codeDisplay.classList.add('show');
+
+            // Scroll to code display
+            codeDisplay.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // Copy code to clipboard
+        document.getElementById('copy-button').addEventListener('click', function() {
+            const codeValue = document.getElementById('code-value').textContent;
+            
+            // Use modern Clipboard API
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(codeValue).then(function() {
+                    const button = document.getElementById('copy-button');
+                    const originalText = button.textContent;
+                    button.textContent = 'Copied!';
+                    button.style.background = '#4caf50';
+                    
+                    setTimeout(function() {
+                        button.textContent = originalText;
+                        button.style.background = '#667eea';
+                    }, 2000);
+                }).catch(function(err) {
+                    console.error('Failed to copy:', err);
+                    fallbackCopyTextToClipboard(codeValue);
+                });
+            } else {
+                fallbackCopyTextToClipboard(codeValue);
+            }
+        });
+
+        // Fallback copy method for older browsers
+        function fallbackCopyTextToClipboard(text) {
+            const textArea = document.createElement('textarea');
+            textArea.value = text;
+            textArea.style.position = 'fixed';
+            textArea.style.left = '-999999px';
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                const button = document.getElementById('copy-button');
+                const originalText = button.textContent;
+                button.textContent = 'Copied!';
+                button.style.background = '#4caf50';
+                
+                setTimeout(function() {
+                    button.textContent = originalText;
+                    button.style.background = '#667eea';
+                }, 2000);
+            } catch (err) {
+                console.error('Fallback copy failed:', err);
+                alert('Failed to copy code. Please copy manually.');
+            }
+            
+            document.body.removeChild(textArea);
+        }
+
+        // Handle regular form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your regular login logic here
+            console.log('Regular login form submitted');
+            alert('Regular login functionality - implement your backend authentication here');
+        });
+    </script>
 </body>
 </html>
 
