@@ -110,19 +110,32 @@ class GrowwMutualFundScraper:
 
     def extract_exit_load(self, soup: BeautifulSoup) -> Optional[str]:
         """Extract exit load information"""
-        exit_load = self.extract_text_content(soup, [
-            '[class*="exit"]',
-            'div:contains("Exit Load")',
-        ])
-        
-        # Pattern matching
-        exit_pattern = re.compile(r'exit\s*load[:\s]*([^\.]+)', re.IGNORECASE)
         text = soup.get_text()
-        match = exit_pattern.search(text)
-        if match:
-            return match.group(1).strip()
         
-        return exit_load
+        # Pattern matching for specific exit load format
+        exit_patterns = [
+            re.compile(r'exit\s*load\s*of\s*([\d.]+%[^.]+year[^.]*)', re.IGNORECASE),
+            re.compile(r'exit\s*load[:\s]*([\d.]+%[^.]+)', re.IGNORECASE),
+            re.compile(r'([\d.]+%\s*if\s*redeemed\s*within[^.]+)', re.IGNORECASE),
+        ]
+        
+        for pattern in exit_patterns:
+            match = pattern.search(text)
+            if match:
+                return match.group(1).strip()
+        
+        # Look for exit load section
+        exit_section = soup.find(string=re.compile(r'Exit\s*Load', re.IGNORECASE))
+        if exit_section:
+            parent = exit_section.find_parent()
+            if parent:
+                # Get the next meaningful text
+                for sibling in parent.find_next_siblings():
+                    sibling_text = sibling.get_text(strip=True)
+                    if sibling_text and '%' in sibling_text and len(sibling_text) < 200:
+                        return sibling_text
+        
+        return None
 
     def extract_minimum_investment(self, soup: BeautifulSoup) -> Dict[str, Optional[str]]:
         """Extract minimum investment amounts"""
@@ -383,6 +396,62 @@ class GrowwMutualFundScraper:
         
         return manager
 
+    def extract_stamp_duty(self, soup: BeautifulSoup) -> Optional[str]:
+        """Extract stamp duty information"""
+        text = soup.get_text()
+        
+        # Pattern for stamp duty
+        stamp_patterns = [
+            re.compile(r'stamp\s*duty[:\s]*([\.\d]+%[^.]+)', re.IGNORECASE),
+            re.compile(r'stamp\s*duty[:\s]*([^.]+\.?)', re.IGNORECASE),
+        ]
+        
+        for pattern in stamp_patterns:
+            match = pattern.search(text)
+            if match:
+                return match.group(1).strip()
+        
+        return None
+    
+    def extract_tax_implications(self, soup: BeautifulSoup) -> Optional[str]:
+        """Extract tax implications"""
+        text = soup.get_text()
+        
+        # Look for tax implication section
+        tax_section = soup.find(string=re.compile(r'Tax\s*[Ii]mplication', re.IGNORECASE))
+        if tax_section:
+            parent = tax_section.find_parent()
+            if parent:
+                # Get the next few siblings to capture full tax info
+                tax_text = []
+                current = parent.find_next_sibling()
+                count = 0
+                while current and count < 5:
+                    text_content = current.get_text(strip=True)
+                    if text_content and len(text_content) > 20:
+                        tax_text.append(text_content)
+                        if 'taxed' in text_content.lower() or '%' in text_content:
+                            break
+                    current = current.find_next_sibling()
+                    count += 1
+                
+                if tax_text:
+                    return ' '.join(tax_text)
+        
+        # Pattern matching for tax implications
+        tax_patterns = [
+            re.compile(r'[Ii]f\s+you\s+redeem\s+within[^.]+taxed[^.]+\.', re.DOTALL),
+            re.compile(r'[Rr]eturns\s+are\s+taxed[^.]+\.', re.DOTALL),
+            re.compile(r'tax[^.]{0,200}(?:redeem|return|gain)[^.]+\.', re.IGNORECASE | re.DOTALL),
+        ]
+        
+        for pattern in tax_patterns:
+            match = pattern.search(text)
+            if match:
+                return match.group(0).strip()
+        
+        return None
+    
     def extract_fund_size(self, soup: BeautifulSoup) -> Optional[str]:
         """Extract fund size (AUM)"""
         fund_size = self.extract_text_content(soup, [
@@ -541,6 +610,8 @@ class GrowwMutualFundScraper:
             'nav': self.extract_nav(soup),
             'expense_ratio': self.extract_expense_ratio(soup),
             'exit_load': self.extract_exit_load(soup),
+            'stamp_duty': self.extract_stamp_duty(soup),
+            'tax_implications': self.extract_tax_implications(soup),
             'minimum_investment': self.extract_minimum_investment(soup),
             'lock_in': self.extract_lock_in(soup),
             'riskometer': self.extract_riskometer(soup),
