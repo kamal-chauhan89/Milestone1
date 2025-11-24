@@ -47,8 +47,17 @@ def initialize_database():
         # Return empty database as fallback
         return FundDatabase()
 
-# Initialize database
+# Initialize database on module load (for gunicorn/Railway)
+print("="*80)
+print("Initializing FAQ Backend API...")
+port = int(os.environ.get('PORT', 5000))
+print(f"PORT environment variable: {port}")
+print("="*80)
+
 db = initialize_database()
+
+print(f"✅ API initialized with {len(db.get_all_funds())} funds")
+print("="*80)
 
 
 class QueryProcessor:
@@ -300,7 +309,7 @@ def get_examples():
 
 if __name__ == '__main__':
     print("="*80)
-    print("MUTUAL FUND FAQ BACKEND API")
+    print("MUTUAL FUND FAQ BACKEND API - Local Development Mode")
     print("="*80)
     print(f"Database loaded: {len(db.get_all_funds())} funds")
     print("\nEndpoints:")
@@ -317,5 +326,7 @@ if __name__ == '__main__':
     
     # Use PORT from environment variable for Railway deployment
     port = int(os.environ.get('PORT', 5000))
-    print(f"Starting server on port {port}")
+    print(f"\n🚀 Starting Flask development server on port {port}...")
+    print("Note: In production (Railway), gunicorn handles the server.")
+    print("="*80)
     app.run(host='0.0.0.0', port=port, debug=False)
