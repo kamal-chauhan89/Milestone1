@@ -153,6 +153,34 @@ class QueryProcessor:
 processor = QueryProcessor()
 
 
+@app.route('/', methods=['GET'])
+def home():
+    """Welcome page with API documentation"""
+    funds = db.get_all_funds()
+    
+    return jsonify({
+        'message': 'Welcome to the Mutual Fund FAQ API',
+        'status': 'running',
+        'total_funds': len(funds),
+        'endpoints': {
+            'POST /query': 'Ask questions about mutual funds',
+            'GET /funds': 'List all available funds',
+            'GET /fund/<name>': 'Get details for a specific fund',
+            'GET /examples': 'Get example questions',
+            'GET /health': 'Check API health status'
+        },
+        'example_usage': {
+            'url': '/query',
+            'method': 'POST',
+            'body': {
+                'query': 'Expense ratio of HDFC Mid Cap Fund?'
+            }
+        },
+        'note': 'Facts-only. No investment advice.',
+        'available_funds': [f['scheme_name'] for f in funds]
+    })
+
+
 @app.route('/query', methods=['POST'])
 def answer_query():
     """
