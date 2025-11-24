@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Groww FAQ Assistant</title>
+    <title>Mutual Fund FAQ Assistant</title>
     <style>
         * {
             margin: 0;
@@ -12,291 +12,296 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             padding: 20px;
         }
 
-        .chat-container {
-            width: 100%;
-            max-width: 420px;
-            height: 700px;
+        .container {
             background: white;
             border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-        }
-
-        .chat-header {
-            background: linear-gradient(135deg, #5f4dee 0%, #4834df 100%);
-            color: white;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .header-left {
-            display: flex;
-            align-items: center;
-            gap: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
         }
 
         .logo {
-            width: 40px;
-            height: 40px;
-            background: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 20px;
-            color: #5f4dee;
-        }
-
-        .header-title {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .header-title h2 {
-            font-size: 18px;
-            font-weight: 600;
-            margin: 0;
-        }
-
-        .header-title span {
-            font-size: 12px;
-            opacity: 0.9;
-            margin-top: 2px;
-        }
-
-        .setup-notice {
-            background: #fff3cd;
-            color: #856404;
-            padding: 15px;
             text-align: center;
-            border-bottom: 2px solid #ffeaa7;
+            margin-bottom: 30px;
         }
 
-        .setup-notice strong {
-            display: block;
-            margin-bottom: 5px;
+        .logo img {
+            height: 50px;
         }
 
-        .chat-messages {
-            flex: 1;
-            overflow-y: auto;
-            padding: 20px;
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .welcome {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        .examples {
             background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
         }
 
-        .message {
-            margin-bottom: 20px;
-            display: flex;
-            gap: 12px;
-            animation: slideIn 0.3s ease-out;
+        .examples h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 16px;
         }
 
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .message-avatar {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-
-        .message-avatar svg {
-            width: 20px;
-            height: 20px;
-            fill: white;
-        }
-
-        .message-content {
-            flex: 1;
-        }
-
-        .message-bubble {
+        .example-question {
             background: white;
             padding: 12px 16px;
+            margin: 8px 0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .example-question:hover {
+            border-color: #667eea;
+            transform: translateX(5px);
+        }
+
+        .query-input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            transition: border-color 0.3s;
+        }
+
+        .query-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .ask-button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .ask-button:hover {
+            transform: scale(1.02);
+        }
+
+        .ask-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .answer-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
             border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-            line-height: 1.5;
+            display: none;
+        }
+
+        .answer-section.show {
+            display: block;
+        }
+
+        .answer-text {
             color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
         }
 
-        .deployment-info {
-            background: #e3f2fd;
-            border-left: 4px solid #2196f3;
-            padding: 12px;
-            margin-top: 10px;
-            border-radius: 4px;
-            font-size: 13px;
-        }
-
-        .deployment-info code {
-            background: #fff;
-            padding: 2px 6px;
-            border-radius: 3px;
-            font-family: monospace;
-            color: #d32f2f;
-        }
-
-        .deployment-info a {
-            color: #1976d2;
+        .source-link {
+            display: inline-block;
+            color: #667eea;
             text-decoration: none;
+            font-size: 14px;
+            margin-top: 10px;
         }
 
-        .deployment-info a:hover {
+        .source-link:hover {
             text-decoration: underline;
         }
 
-        .chat-input-container {
-            padding: 16px;
-            background: white;
-            border-top: 1px solid #e9ecef;
+        .disclaimer {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+            text-align: center;
         }
 
-        .chat-input-wrapper {
-            display: flex;
-            gap: 12px;
-            align-items: center;
-        }
-
-        .chat-input {
-            flex: 1;
-            padding: 12px 16px;
-            border: 2px solid #e9ecef;
-            border-radius: 24px;
+        .disclaimer-text {
+            color: #856404;
             font-size: 14px;
-            outline: none;
-            transition: border-color 0.3s;
-            opacity: 0.5;
+            font-weight: bold;
         }
 
-        .chat-input:disabled {
-            background: #f5f5f5;
-            cursor: not-allowed;
+        .loading {
+            display: none;
+            text-align: center;
+            color: #667eea;
+            margin: 20px 0;
         }
 
-        .send-btn {
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0.5;
-            cursor: not-allowed;
-            flex-shrink: 0;
-        }
-
-        .send-btn svg {
-            width: 20px;
-            height: 20px;
-            fill: white;
+        .loading.show {
+            display: block;
         }
     </style>
 </head>
 <body>
-    <div class="chat-container">
-        <div class="chat-header">
-            <div class="header-left">
-                <div class="logo">G</div>
-                <div class="header-title">
-                    <h2>Groww FAQ Assistant</h2>
-                    <span>Demo Version</span>
-                </div>
+    <div class="container">
+        <div class="logo">
+            <svg width="120" height="40" viewBox="0 0 120 40" fill="none">
+                <text x="10" y="28" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#00d09c">Groww</text>
+            </svg>
+        </div>
+
+        <h1>Mutual Fund FAQ Assistant</h1>
+        <p class="welcome">Welcome! Ask me factual questions about mutual funds.</p>
+
+        <div class="examples">
+            <h3>💡 Example Questions:</h3>
+            <div class="example-question" onclick="askQuestion('Expense ratio of HDFC Mid Cap Fund?')">
+                📊 Expense ratio of HDFC Mid Cap Fund?
+            </div>
+            <div class="example-question" onclick="askQuestion('ELSS lock-in period?')">
+                🔒 ELSS lock-in period?
+            </div>
+            <div class="example-question" onclick="askQuestion('Minimum SIP for HDFC Mid Cap Fund?')">
+                💰 Minimum SIP for HDFC Mid Cap Fund?
             </div>
         </div>
 
-        <div class="setup-notice">
-            <strong>⚠️ Backend Setup Required</strong>
-            This is a demo version. To use the full chatbot, please deploy the backend.
+        <input 
+            type="text" 
+            class="query-input" 
+            id="queryInput" 
+            placeholder="Type your question here..."
+            onkeypress="handleKeyPress(event)"
+        >
+
+        <button class="ask-button" onclick="submitQuery()" id="askButton">
+            Ask Question
+        </button>
+
+        <div class="loading" id="loading">
+            ⏳ Searching database...
         </div>
 
-        <div class="chat-messages" id="chatMessages">
-            <div class="message">
-                <div class="message-avatar">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
-                    </svg>
-                </div>
-                <div class="message-content">
-                    <div class="message-bubble">
-                        Welcome to Groww FAQ Assistant! 👋<br><br>
-                        This is a demo deployment on GitHub Pages. To use the full chatbot with live data, you need to deploy the backend API server.
-                        
-                        <div class="deployment-info">
-                            <strong>🚀 Deployment Options:</strong><br><br>
-                            
-                            <strong>Option 1: Deploy Backend on Render (Recommended)</strong><br>
-                            1. Create account on <a href="https://render.com" target="_blank">Render.com</a><br>
-                            2. Create new Web Service<br>
-                            3. Connect your GitHub repository<br>
-                            4. Build Command: <code>pip install -r requirements.txt</code><br>
-                            5. Start Command: <code>python api_server.py</code><br>
-                            6. Add Environment Variable: <code>GOOGLE_GEMINI_API_KEY</code><br><br>
-                            
-                            <strong>Option 2: Deploy on Railway</strong><br>
-                            1. Visit <a href="https://railway.app" target="_blank">Railway.app</a><br>
-                            2. Deploy from GitHub<br>
-                            3. Add environment variables<br><br>
-                            
-                            <strong>Option 3: Local Development</strong><br>
-                            1. Clone the repository<br>
-                            2. Install: <code>pip install -r requirements.txt</code><br>
-                            3. Set API key in <code>.env</code> file<br>
-                            4. Run: <code>python api_server.py</code><br>
-                            5. Open: <code>chatbot.html</code><br><br>
-                            
-                            <strong>📚 Full Documentation:</strong><br>
-                            Check the <a href="https://github.com/kamal-chauhan89/Milestone1" target="_blank">GitHub README</a> for complete setup instructions.
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="answer-section" id="answerSection">
+            <div class="answer-text" id="answerText"></div>
+            <a href="#" class="source-link" id="sourceLink" target="_blank" style="display:none;">
+                📄 View source on Groww
+            </a>
         </div>
 
-        <div class="chat-input-container">
-            <div class="chat-input-wrapper">
-                <input 
-                    type="text" 
-                    class="chat-input" 
-                    placeholder="Backend required for queries..."
-                    disabled
-                >
-                <button class="send-btn" disabled>
-                    <svg viewBox="0 0 24 24">
-                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
-                    </svg>
-                </button>
-            </div>
+        <div class="disclaimer">
+            <p class="disclaimer-text">⚠️ Facts-only. No investment advice.</p>
         </div>
     </div>
+
+    <script>
+        const API_URL = 'https://milestone1-production-d911.up.railway.app';
+
+        function askQuestion(question) {
+            document.getElementById('queryInput').value = question;
+            submitQuery();
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                submitQuery();
+            }
+        }
+
+        async function submitQuery() {
+            const query = document.getElementById('queryInput').value.trim();
+            
+            if (!query) {
+                alert('Please enter a question');
+                return;
+            }
+
+            // Show loading
+            document.getElementById('loading').classList.add('show');
+            document.getElementById('askButton').disabled = true;
+            document.getElementById('answerSection').classList.remove('show');
+
+            try {
+                const response = await fetch(`${API_URL}/query`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ query })
+                });
+
+                const data = await response.json();
+
+                // Hide loading
+                document.getElementById('loading').classList.remove('show');
+                document.getElementById('askButton').disabled = false;
+
+                // Show answer
+                displayAnswer(data);
+
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('loading').classList.remove('show');
+                document.getElementById('askButton').disabled = false;
+                
+                document.getElementById('answerText').textContent = 
+                    '❌ Error connecting to server. Please make sure the backend is running.';
+                document.getElementById('answerSection').classList.add('show');
+                document.getElementById('sourceLink').style.display = 'none';
+            }
+        }
+
+        function displayAnswer(data) {
+            const answerSection = document.getElementById('answerSection');
+            const answerText = document.getElementById('answerText');
+            const sourceLink = document.getElementById('sourceLink');
+
+            answerText.textContent = data.answer;
+            answerSection.classList.add('show');
+
+            if (data.source) {
+                sourceLink.href = data.source;
+                sourceLink.style.display = 'inline-block';
+            } else {
+                sourceLink.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
